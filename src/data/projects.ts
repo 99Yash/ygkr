@@ -1,3 +1,11 @@
+type Projects = {
+  name: string;
+  description: string;
+  github: string;
+  technologies: string[];
+  website: string;
+};
+
 export const projects = [
   {
     name: 'Devfolio',
@@ -40,4 +48,4 @@ export const projects = [
       'Server Components',
     ],
   },
-];
+] satisfies Projects[];
