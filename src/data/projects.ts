@@ -10,15 +10,15 @@ export const projects = [
   {
     name: 'Devfolio',
     description:
-      'Portfolio generator for developers. A completely free and easy to use application to catapult your online presence built using Next.js, Clerk auth, MongoDB-Mongoose, ChakraUI. Options to add Work Experiences, developer tech stack, featured projects with their corresponding Github and Website links, and much more. Fully Responsive on all devices.',
+      'A  Seamless, No-Cost Solution to Elevate Your Digital Presence & Simplify Recruiter Recognition.The Ultimate Platform for Backend Developers and Junior Coders to Showcase Their Projects, Professional Journey, and Technical Expertise. Built using Next.js, MongoDB-Mongoose, ChakraUI along with Clerk for authentication. Fully Responsive on all devices.',
     github: 'https://github.com/99Yash/devfolio-client',
-    technologies: ['NextJS', 'Typescript', 'ChakraUI', 'Clerk Auth', 'NodeJS'],
+    technologies: ['NextJS', 'Typescript', 'ChakraUI', 'Clerk Auth'],
     website: 'https://devfolio-client.vercel.app',
   },
   {
-    name: 'Shreddit',
+    name: 'Shreddiit',
     description:
-      "Reddit for building a personalized community. Client side design inspired from Josh's breadit repo. Built using the latest developments in the React ecosystem, using Shadcn/ui, UploadThing api for storing images, React Server Components, Authentication using Cleek, Prisma & Zod.",
+      'Reddit like application for building a personalized community.A Dynamic Online Hub Engineered to Foster a Culture of Anonymous Sharing Among Peers, Enabling the Dissemination of Insights, Resources, and Opinions in an Atmosphere of Respect and Empathy. Built this so that my college mates can anonymously share valuable resources & their opinions in a respectful way without being judged or shamed for it. Built using the latest developments in the React ecosystem, using Shadcn/ui, UploadThing api for storing images, React Server Components, Authentication using Clerk, Prisma & Zod. The aim was to revolutionize the social discourse.',
     github: 'https://github.com/99Yash/shreddiit',
     website: 'https://shreddiit.vercel.app',
     technologies: [
@@ -34,7 +34,7 @@ export const projects = [
   {
     name: 'Trinsta',
     description:
-      'Instagram Clone using the t3-stack: tRPC, Shadcn/UI, React Server Components, the uploadThing API for file uploads, Prisma, Zod and React hook forms. ',
+      'An Innovative Instagram Iteration Developed with the t3-Stack. Harnessing the Power of tRPC, Shadcn/UI, React Server Components, t the Pioneering uploadThing API for Seamless File Integration, Prisma, Zod, and React Hook Forms.',
     github: 'https://github.com/99Yash/trpc-insta',
     website: 'https://trpc-insta.vercel.app/',
     technologies: [

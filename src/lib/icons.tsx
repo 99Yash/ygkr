@@ -68,7 +68,7 @@ export const t3: Icon = (props) => (
     xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
-    <g clip-path="url(#clip0_1_12)">
+    <g clipPath="url(#clip0_1_12)">
       <path
         d="M165.269 24.0976L188.481 -0.000411987H0V24.0976H165.269Z"
         fill="black"
