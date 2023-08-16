@@ -1,6 +1,6 @@
-'use client';
-import Link from 'next/link';
-import ButtonBackgroundShine from './ui/button-bg-shine';
+"use client";
+import Link from "next/link";
+import ButtonBackgroundShine from "./ui/button-bg-shine";
 
 const GetInTouch = () => {
   return (

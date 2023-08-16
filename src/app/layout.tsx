@@ -1,23 +1,23 @@
-import { TailwindIndicator } from '@/components/tailwind-indicator';
-import { ThemeProvider } from '@/components/theme-provider';
-import { Analytics } from '@vercel/analytics/react';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import '../styles/globals.css';
+import { TailwindIndicator } from "@/components/tailwind-indicator";
+import { ThemeProvider } from "@/components/theme-provider";
+import { Analytics } from "@vercel/analytics/react";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "../styles/globals.css";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
-  title: 'Yash Gourav Kar',
-  description: 'Software Developer',
-  metadataBase: new URL('https://ygkr.vercel.app'),
+  title: "Yash Gourav Kar",
+  description: "Software Developer",
+  metadataBase: new URL("https://ygkr.vercel.app"),
   openGraph: {
-    title: 'ygkr.vercel.app',
-    description: 'Software developer',
-    url: 'https://ygkr.vercel.app',
-    siteName: 'ygkr.vercel.app',
-    locale: 'en-US',
-    type: 'website',
+    title: "ygkr.vercel.app",
+    description: "Software developer",
+    url: "https://ygkr.vercel.app",
+    siteName: "ygkr.vercel.app",
+    locale: "en-US",
+    type: "website",
   },
 };
 
