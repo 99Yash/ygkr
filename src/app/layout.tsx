@@ -39,7 +39,7 @@ export default function RootLayout({
         <Analytics />
       </head>
       <body
-        className={`${inter.className} min-h-screen bg-gray-300 antialiased dark:bg-gradient-to-r dark:from-gray-950 dark:via-black dark:to-blue-950 `}
+        className={` ${inter.className} min-h-screen bg-gray-300 antialiased dark:bg-gradient-to-r dark:from-gray-950 dark:via-black dark:to-blue-950 `}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
