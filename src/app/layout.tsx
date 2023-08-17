@@ -8,16 +8,23 @@ import "../styles/globals.css";
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
-  title: "Yash Gourav Kar",
+  title: {
+    default: "ygkr",
+    template: "%s | ygkr",
+  },
   description: "Software Developer",
   metadataBase: new URL("https://ygkr.vercel.app"),
   openGraph: {
-    title: "ygkr.vercel.app",
+    title: "ygkr",
     description: "Software developer",
     url: "https://ygkr.vercel.app",
     siteName: "ygkr.vercel.app",
     locale: "en-US",
     type: "website",
+  },
+  twitter: {
+    title: "ygkr",
+    card: "summary_large_image",
   },
 };
 
@@ -28,15 +35,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <Analytics />
+      </head>
       <body
-        className={`${inter.className} min-h-screen antialiased dark:bg-black/60 bg-gray-300 `}
+        className={`${inter.className} min-h-screen bg-gray-300 antialiased dark:bg-gradient-to-r dark:from-gray-950 dark:via-black dark:to-blue-950 `}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
           <TailwindIndicator />
         </ThemeProvider>
       </body>
-      <Analytics />
     </html>
   );
 }
