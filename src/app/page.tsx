@@ -18,13 +18,13 @@ export default function Home() {
         </li>
       </nav>
       <Particles
-        className="animate-fade-in absolute inset-0 -z-10"
+        className="absolute inset-0 -z-10 animate-fade-in"
         color="#9d4545"
         quantity={70}
         ease={30}
       />
       <div className=" flex w-4/5 flex-col items-center justify-center gap-6 ">
-        <h1 className=" cursor-default bg-gradient-to-r from-blue-700 via-orange-600 to-pink-500 bg-clip-text text-4xl font-semibold tracking-tight text-transparent dark:from-blue-500/80 dark:via-orange-500/80 dark:to-pink-400/80 lg:text-6xl lg:tracking-[-0.24rem] ">
+        <h1 className=" cursor-default bg-gradient-to-r from-blue-700 via-orange-800 to-pink-600 bg-clip-text  text-4xl font-semibold tracking-tight text-transparent dark:from-blue-500/80 dark:via-orange-500/80 dark:to-pink-400/80 md:text-5xl lg:text-6xl lg:tracking-[-0.24rem] ">
           Yash Gourav Kar
         </h1>
         <h5 className="md:text-md text-center text-sm text-black dark:text-gray-400/80 ">
@@ -38,7 +38,7 @@ export default function Home() {
           Designed and built by{" "}
           <Link
             href={self.twitter}
-            className="font-semibold duration-150 hover:text-zinc-200"
+            className="font-semibold duration-150 hover:text-zinc-400"
           >
             @yash
           </Link>
