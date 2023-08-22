@@ -34,12 +34,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <head>
         <Analytics />
       </head>
       <body
-        className={` ${inter.className} min-h-screen bg-gray-300 antialiased dark:bg-gradient-to-r dark:from-gray-950 dark:via-black dark:to-blue-950 `}
+        className={` ${inter.className} min-h-screen bg-gray-300 antialiased dark:bg-gradient-to-r dark:from-black dark:via-gray-950 dark:to-blue-950 `}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}

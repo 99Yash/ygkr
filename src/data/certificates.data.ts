@@ -11,4 +11,8 @@ export const certificates = [
     name: "full-stack development",
     image: "node-react-grider-cert.jpg",
   },
+  {
+    name: "sql-postgresql",
+    image: "sql-postgresql-cert.jpg",
+  },
 ];
