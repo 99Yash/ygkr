@@ -3,6 +3,7 @@ import Link from "next/link";
 import ButtonBackgroundShine from "./ui/button-bg-shine";
 
 const GetInTouch = () => {
+  //* mailto:${self.email} doesn't work
   return (
     <Link
       href={`mailto:yashgouravkar@gmail.com`}

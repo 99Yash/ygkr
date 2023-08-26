@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../styles/globals.css";
+import { Particles } from "@/components/ui/particles";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
@@ -41,7 +42,21 @@ export default function RootLayout({
       <body
         className={` ${inter.className} min-h-screen bg-gray-300 antialiased dark:bg-gradient-to-r dark:from-black dark:via-gray-950 dark:to-blue-950 `}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        {/* //?in light mode */}
+        <Particles
+          className="absolute inset-0 -z-10 animate-fade-in"
+          color="#232121"
+          quantity={70}
+          ease={30}
+        />
+        {/* //?in dark mode */}
+        <Particles
+          className="absolute inset-0 -z-10 animate-fade-in"
+          color="#748d41"
+          quantity={60}
+          ease={30}
+        />
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           {children}
           <TailwindIndicator />
         </ThemeProvider>

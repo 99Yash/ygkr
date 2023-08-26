@@ -8,9 +8,9 @@ import Image from "next/image";
 const Logo = () => {
   const { theme } = useTheme();
   return theme === "light" ? (
-    <Image src={logoBlack} width={60} height={16} alt="Yash" />
+    <Image src={logoBlack} width={50} height={16} alt="Yash" />
   ) : (
-    <Image src={logoWhite} width={60} height={16} alt="Yash" />
+    <Image src={logoWhite} width={50} height={16} alt="Yash" />
   );
 };
 
