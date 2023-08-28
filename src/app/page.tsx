@@ -7,6 +7,7 @@ export default function Home() {
     <main className="relative flex min-h-screen flex-col items-center justify-center gap-4">
       <Nav />
       <Hero />
+      {/* <Certificates/> */}
       <Footer />
     </main>
   );

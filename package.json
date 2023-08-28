@@ -2,6 +2,7 @@
   "name": "ygkr",
   "version": "0.1.0",
   "private": true,
+  "description": "Personal website built with the new router, Server Components, and TailwindCSS",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
