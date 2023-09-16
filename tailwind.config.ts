@@ -17,12 +17,11 @@ module.exports = {
     },
     extend: {
       animation: {
-        "background-shine": "background-shine 2s linear infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "fade-in": "fade-in 3s ease-in-out forwards",
-        "fade-left": "fade-left 3s ease-in-out forwards",
-        "fade-right": "fade-right 3s ease-in-out forwards",
+        "background-shine": "background-shine 2s linear infinite",
+        "fade-down": "fade-down 0.5s ",
+        "fade-up": "fade-down 0.8s ",
       },
       colors: {
         border: "hsl(var(--border))",
@@ -65,6 +64,32 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        "fade-up": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(10px)",
+          },
+          "80%": {
+            opacity: "0.6",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0px)",
+          },
+        },
+        "fade-down": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(-10px)",
+          },
+          "80%": {
+            opacity: "0.6",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0px)",
+          },
+        },
         "background-shine": {
           from: {
             backgroundPosition: "0 0",

@@ -13,11 +13,13 @@ export const metadata: Metadata = {
     default: "ygkr",
     template: "%s | ygkr",
   },
-  description: "Software Developer",
+  description:
+    "Software Developer building stuff with TRPC & everything new in the NextJS ecosystem",
   metadataBase: new URL("https://ygkr.vercel.app"),
   openGraph: {
     title: "ygkr",
-    description: "Software developer",
+    description:
+      "Software Developer building stuff with TRPC & everything new in the NextJS ecosystem",
     url: "https://ygkr.vercel.app",
     siteName: "ygkr.vercel.app",
     locale: "en-US",
@@ -40,18 +42,18 @@ export default function RootLayout({
         <Analytics />
       </head>
       <body
-        className={` ${inter.className} min-h-screen  bg-gray-300 antialiased dark:bg-gradient-to-r dark:from-gray-950 dark:via-black dark:to-[#11113b] `}
+        className={` ${inter.className} min-h-screen bg-gray-300 antialiased dark:bg-gradient-to-br dark:from-[#000] dark:via-[#201a23] dark:to-[#000] `}
       >
         {/* //?in light mode */}
         <Particles
-          className="absolute inset-0 -z-10 animate-fade-in "
+          className="animate-fade-in absolute inset-0 -z-10 "
           color="#232121"
           quantity={70}
           ease={30}
         />
         {/* //?in dark mode */}
         <Particles
-          className="absolute inset-0 -z-10 animate-fade-in opacity-50"
+          className="animate-fade-in absolute inset-0 -z-10 opacity-50"
           color="#9eca44"
           quantity={60}
           ease={30}
