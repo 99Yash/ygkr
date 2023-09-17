@@ -5,7 +5,7 @@ import Nav from "@/components/nav";
 
 export default function Home() {
   return (
-    <main className="relative flex min-h-screen flex-col items-center justify-center gap-4">
+    <main className="relative  flex min-h-screen flex-col items-center justify-center gap-4">
       <Nav />
       <Hero />
       {/* <Certificates /> */}

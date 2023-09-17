@@ -11,10 +11,10 @@ const inter = Inter({ subsets: ["latin"], display: "swap" });
 export const metadata: Metadata = {
   title: {
     default: "ygkr",
-    template: "%s | ygkr",
+    template: "%s - ygkr",
   },
   description:
-    "Software Developer building stuff with TRPC & everything new in the NextJS ecosystem",
+    "Software Developer building stuff with everything new in the NextJS ecosystem",
   metadataBase: new URL("https://ygkr.vercel.app"),
   openGraph: {
     title: "ygkr",
@@ -24,9 +24,27 @@ export const metadata: Metadata = {
     siteName: "ygkr.vercel.app",
     locale: "en-US",
     type: "website",
+    images: [
+      {
+        url: "../../public/Screenshot_20230917_114024.png",
+        width: 1920,
+        height: 1080,
+      },
+    ],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
   twitter: {
-    title: "ygkr",
+    title: "Yash",
     card: "summary_large_image",
   },
 };
@@ -42,7 +60,7 @@ export default function RootLayout({
         <Analytics />
       </head>
       <body
-        className={` ${inter.className} min-h-screen bg-gray-300 antialiased dark:bg-gradient-to-br dark:from-[#000] dark:via-[#201a23] dark:to-[#000] `}
+        className={` ${inter.className} min-h-screen bg-gray-300 bg-gradient-to-br antialiased dark:sm:from-[#151523] dark:sm:via-black dark:sm:to-[#151523] md:from-[#000] md:via-[#181828] md:to-[#000] `}
       >
         {/* //?in light mode */}
         <Particles
@@ -54,7 +72,7 @@ export default function RootLayout({
         {/* //?in dark mode */}
         <Particles
           className="animate-fade-in absolute inset-0 -z-10 opacity-50"
-          color="#9eca44"
+          color="#93968c"
           quantity={60}
           ease={30}
         />
