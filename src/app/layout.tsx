@@ -59,9 +59,7 @@ export default function RootLayout({
       <head>
         <Analytics />
       </head>
-      <body
-        className={` ${inter.className} min-h-screen bg-gray-300 bg-gradient-to-br antialiased dark:sm:from-[#151523] dark:sm:via-black dark:sm:to-[#151523] md:from-[#000] md:via-[#181828] md:to-[#000] `}
-      >
+      <body className={` ${inter.className} min-h-screen antialiased`}>
         {/* //?in light mode */}
         <Particles
           className="animate-fade-in absolute inset-0 -z-10 "

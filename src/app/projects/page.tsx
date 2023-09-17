@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <section className="mt-8 flex h-full flex-col gap-6 overflow-hidden md:mt-12">
+    <section className="flex flex-col gap-6 pt-8 md:pt-12">
       <header className="flex flex-col gap-4 ">
         <h1 className="flex items-center text-4xl font-bold tracking-tight text-gray-200/90">
           <Link className="mr-2" href={"/"}>
@@ -56,17 +56,6 @@ export default function Page() {
             <Link href={`/projects/${p.name}`}>
               <article className="relative h-full w-full p-4 md:p-8">
                 <div className="flex items-center justify-between gap-2">
-                  <div className="text-xs text-zinc-100">
-                    {/* {featured.date ? ( */}
-                    <time dateTime={new Date().toISOString()}>
-                      {Intl.DateTimeFormat(undefined, {
-                        dateStyle: "medium",
-                      }).format(new Date())}
-                    </time>
-                    {/* ) : ( */}
-                    {/* <span>SOON</span> */}
-                    {/* )} */}
-                  </div>
                   <span className="flex items-center gap-1 text-xs text-zinc-500">
                     <Eye className="h-4 w-4" />{" "}
                     {Intl.NumberFormat("en-US", { notation: "compact" }).format(
