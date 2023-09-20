@@ -2,10 +2,17 @@ import GetInTouch from "./get-in-touch";
 import { self } from "@/data/self.data";
 import Link from "next/link";
 import Balancer from "react-wrap-balancer";
+import { Particles } from "./ui/particles";
 
 const Hero = () => {
   return (
-    <div className=" flex w-4/5 flex-col items-center justify-center gap-6 ">
+    <div className="flex w-4/5 flex-col items-center justify-center gap-6 ">
+      <Particles
+        className="animate-fade-in absolute inset-0 "
+        color="#8daab5"
+        quantity={60}
+        ease={30}
+      />
       <ul
         className="text- flex animate-fade-down gap-4 text-xs dark:text-gray-400 md:text-sm"
         style={{
@@ -14,19 +21,19 @@ const Hero = () => {
         }}
       >
         <Link
-          className=" duration-500 hover:font-semibold hover:dark:text-zinc-300"
+          className="z-10 duration-500 hover:font-semibold hover:dark:text-zinc-300"
           href={"/projects"}
         >
           Projects
         </Link>
         <Link
-          className=" duration-500 hover:font-semibold hover:dark:text-zinc-300"
+          className=" z-10 duration-500 hover:font-semibold hover:dark:text-zinc-300"
           href={"/certificates"}
         >
           Certificates
         </Link>
         <Link
-          className=" duration-500 hover:font-semibold hover:dark:text-zinc-300"
+          className=" z-10 duration-500 hover:font-semibold hover:dark:text-zinc-300"
           href={"/contact"}
         >
           Contact

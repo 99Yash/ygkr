@@ -1,6 +1,7 @@
 export type Projects = {
   name: string;
   description: string;
+  summary?: string;
   github: string;
   tech: string[];
   site: string;
@@ -10,22 +11,31 @@ export const projects = [
   {
     name: "devfolio",
     description:
-      "A  Seamless, No-Cost Solution to Elevate Your Digital Presence & Simplify Recruiter Recognition.The Ultimate Platform for Backend Developers and Junior Coders to Showcase Their Projects, Professional Journey, and Technical Expertise. Built using Next.js, MongoDB-Mongoose, ChakraUI along with Clerk for authentication. Fully Responsive on all devices.",
+      "A  Seamless, No-Cost Solution to Elevate Your Digital Presence & Simplify Recruiter Recognition.The Ultimate Platform for Backend Developers and Junior Coders to Showcase Their Projects, Professional Journey, and Technical Expertise. Fully Responsive on all devices.",
+    summary:
+      "Devfolio  is aimed at developers who either specialize in backend technologies or are just learning to code. Simply enter some credentials and get a fully responsive portfolio website generated for them. That they can then show to potential recruiters or just enjoy certain corner of the internet for them. Entire process is free of charge.",
     github: "https://github.com/99Yash/devfolio-client",
     site: "https://devfolio-client.vercel.app",
-    tech: ["NextJS", "Typescript", "ChakraUI", "Clerk Auth"],
+    tech: [
+      "NextJS",
+      "Typescript",
+      "ChakraUI",
+      "Clerk-Auth",
+      "MongoDB",
+      "Mongoose",
+    ],
   },
   {
     name: "shreddiit",
     description:
-      "Reddit-like application for building a personalized community aimed at revolutionizing social discourse at my college. A Dynamic Online Hub Engineered to Foster a Culture of Anonymous Sharing Among Peers, Enabling the Dissemination of Insights, Resources, and Opinions in an Atmosphere of Respect and Empathy. Built this so that my college mates can anonymously share valuable resources & their opinions Respectfully without being judged or shamed for it. Built using the latest developments in the React ecosystem, using Shadcn/ui, UploadThing api for storing images, React Server Components, Authentication using Clerk, Prisma & Zod.",
+      "Reddit-like application for building a personalized community aimed at revolutionizing social discourse at my college. A Dynamic Online Hub Engineered to foster a culture of Anonymous Sharing Among Peers. Built this so that my college mates can anonymously share valuable resources & their opinions Respectfully without being judged or shamed for it. Built using the latest developments in the React ecosystem.",
     github: "https://github.com/99Yash/shreddiit",
     site: "https://shreddiit.vercel.app",
     tech: [
       "NextJS 13",
       "Typescript",
       "Shadcn/UI",
-      "Clerk Auth",
+      "Clerk-Auth",
       "Prisma",
       "PlanetScale",
       "Server Components",
@@ -34,14 +44,14 @@ export const projects = [
   {
     name: "trinsta",
     description:
-      "An Innovative Instagram Iteration Developed with the t3-Stack. Harnessing the Power of tRPC, Shadcn/UI, React Server Components, the uploadThing API for multiple File uploads, Prisma, Zod, and React Hook Forms.",
+      "An Innovative Instagram Iteration Developed with the t3-Stack.",
     github: "https://github.com/99Yash/trpc-insta",
     site: "https://trpc-insta.vercel.app/",
     tech: [
       "NextJS 13",
       "Typescript",
       "Shadcn/UI",
-      "Next Auth",
+      "Next-Auth",
       "Prisma",
       "TRPC",
       "PlanetScale",

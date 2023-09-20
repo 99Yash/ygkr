@@ -1,10 +1,10 @@
 import { TailwindIndicator } from "@/components/tailwind-indicator";
 import { ThemeProvider } from "@/components/theme-provider";
-import { Particles } from "@/components/ui/particles";
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../styles/globals.css";
+import { Particles } from "@/components/ui/particles";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
@@ -59,21 +59,9 @@ export default function RootLayout({
       <head>
         <Analytics />
       </head>
-      <body className={` ${inter.className} min-h-screen antialiased`}>
-        {/* //?in light mode */}
-        <Particles
-          className="animate-fade-in absolute inset-0 -z-10 "
-          color="#232121"
-          quantity={70}
-          ease={30}
-        />
-        {/* //?in dark mode */}
-        <Particles
-          className="animate-fade-in absolute inset-0 -z-10 opacity-50"
-          color="#93968c"
-          quantity={60}
-          ease={30}
-        />
+      <body
+        className={` ${inter.className} relative min-h-screen antialiased scrollbar-hide`}
+      >
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           {children}
           <TailwindIndicator />
