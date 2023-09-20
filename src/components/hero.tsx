@@ -1,7 +1,7 @@
-import GetInTouch from "./get-in-touch";
 import { self } from "@/data/self.data";
 import Link from "next/link";
 import Balancer from "react-wrap-balancer";
+import ButtonBackgroundShine from "./ui/button-bg-shine";
 import { Particles } from "./ui/particles";
 
 const Hero = () => {
@@ -60,7 +60,14 @@ const Hero = () => {
           delivering beautiful experiences.
         </Balancer>
       </h5>
-      <GetInTouch />
+      <Link
+        href={`mailto:yashgouravkar@gmail.com`}
+        target="_blank"
+        rel="noreferrer"
+        className="z-10"
+      >
+        <ButtonBackgroundShine text="Get in touch!" />
+      </Link>
     </div>
   );
 };
