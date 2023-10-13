@@ -42,10 +42,10 @@ const page = ({
         </h1>
         <p className="w-3/5 text-center text-zinc-300">
           <Balancer>
-            {
+            {projects.filter((project) => project.name === params.name)[0]
+              .summary ??
               projects.filter((project) => project.name === params.name)[0]
-                .summary
-            }
+                .description}
           </Balancer>
         </p>
         <div className="flex gap-8 font-semibold">

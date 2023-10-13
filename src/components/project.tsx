@@ -27,7 +27,7 @@ export default function Project({ project }: { project: Project }) {
         alt={project.name}
         className="group-hover:opacity-85 duration-200"
       />
-      <div className="absolute left-0 top-0 hidden h-full w-[85%] bg-gradient-to-r from-transparent via-black/90 to-transparent opacity-100 lg:block" />
+      <div className="absolute left-0 top-0 hidden h-full w-[85%] bg-gradient-to-r from-transparent via-black/80 to-transparent opacity-100 duration-300 group-hover:opacity-90 lg:block" />
       <span className="z-10 flex w-full flex-col gap-4 rounded-xl border border-gray-800 p-4 lg:-ml-20 lg:rounded-l-none lg:border-l-0">
         <p className="text-2xl font-bold tracking-tight text-gray-300">
           <Link className="duration-500 " href={`/projects/${project.name}`}>

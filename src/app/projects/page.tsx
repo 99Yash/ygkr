@@ -22,7 +22,7 @@ export default function Page() {
       <Particles
         className=" absolute inset-0 -z-10"
         color="#a8aba2"
-        quantity={90}
+        quantity={66}
         vy={0.2}
         ease={30}
       />
@@ -38,16 +38,16 @@ export default function Page() {
             first). Click on each project to go to its dedicated page.
           </h4>
         </div>
-        <div className="flex gap-4 text-right">
+        <div className="flex h-fit gap-4 text-right">
           <Link
             href={"/certificates"}
-            className="text-gray-400 duration-500 hover:text-zinc-300"
+            className="text-gray-400 duration-500 hover:font-bold hover:text-zinc-300"
           >
             Certificates
           </Link>
           <Link
             href={"/contact"}
-            className="text-gray-400 duration-500 hover:text-zinc-300"
+            className="text-gray-400 duration-500 hover:font-bold hover:text-zinc-300"
           >
             Contact
           </Link>
