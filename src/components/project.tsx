@@ -39,9 +39,9 @@ export default function Project({ project }: { project: Project }) {
         >
           {project.description}
         </p>
-        <ul className="flex w-fit flex-wrap gap-2 bg-gradient-to-r from-slate-400 via-blue-300 to-slate-400 bg-clip-text text-transparent">
+        <ul className="flex w-fit flex-wrap gap-2 bg-gradient-to-r from-slate-900 via-blue-300 to-slate-400 bg-clip-text text-transparent">
           {project.tech.map((tech, idx) => (
-            <li key={idx} className="font-mono">
+            <li key={idx} className=" font-mono">
               {tech}
             </li>
           ))}
