@@ -59,7 +59,7 @@ export default function RootLayout({
         <Analytics />
       </head>
       <body
-        className={` ${inter.className} relative min-h-screen antialiased scrollbar-hide`}
+        className={` ${inter.className} relative min-h-screen bg-gray-950 text-gray-400 antialiased scrollbar-hide`}
       >
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           {children}

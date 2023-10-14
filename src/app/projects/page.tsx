@@ -1,7 +1,7 @@
+import { Navigation } from "@/components/nav";
 import { Particles } from "@/components/ui/particles";
 import { projects } from "@/data/projects.data";
 import { Metadata } from "next";
-import Link from "next/link";
 import Project from "../../components/project";
 
 export const metadata: Metadata = {
@@ -26,34 +26,41 @@ export default function Page() {
         vy={0.2}
         ease={30}
       />
-      <header className="flex justify-between">
+      <header className="flex flex-col gap-4 ">
+        {/* <div className=" flex justify-between">
+          <Link
+            href={"/"}
+            className=" tracking-tight text-gray-400 duration-300 hover:text-gray-300"
+          >
+            <ArrowLeft className="h-4 w-4 " />
+          </Link>
+          <div className="flex h-fit justify-end gap-4">
+            <Link
+              href={"/certificates"}
+              className="font-bold text-gray-500 duration-500 hover:font-bold hover:text-zinc-300"
+            >
+              Certificates
+            </Link>
+            <Link
+              href={"/contact"}
+              className="font-bold text-gray-500 duration-500 hover:font-bold hover:text-zinc-300"
+            >
+              Contact
+            </Link>
+          </div>
+        </div> */}
+        <Navigation />
         <div className="flex flex-col gap-4 ">
           <h1 className="flex items-center text-4xl font-bold tracking-tight text-gray-200/90">
-            <Link className="duration-300 hover:text-zinc-400" href={"/"}>
-              Featured Projects
-            </Link>
+            Featured Projects
           </h1>
-          <h4 className="text-gray-400">
+          <h5 className="text-sm text-gray-400">
             Projects arranged in chronological order of production (earliest
             first). Click on each project to go to its dedicated page.
-          </h4>
-        </div>
-        <div className="flex h-fit gap-4 text-right">
-          <Link
-            href={"/certificates"}
-            className="text-gray-400 duration-500 hover:font-bold hover:text-zinc-300"
-          >
-            Certificates
-          </Link>
-          <Link
-            href={"/contact"}
-            className="text-gray-400 duration-500 hover:font-bold hover:text-zinc-300"
-          >
-            Contact
-          </Link>
+          </h5>
         </div>
       </header>
-      <hr className="mt-2 h-px w-full border-0 bg-gray-600 md:mt-4" />
+      <hr className="h-px w-full border-0 bg-gray-600 md:mt-2" />
       <div className="flex flex-col gap-20">
         {projects.map((project, idx) => (
           <Project project={project} key={idx} />
