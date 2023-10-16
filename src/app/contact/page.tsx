@@ -1,8 +1,7 @@
 "use client";
 import { Navigation } from "@/components/nav";
 import { Card } from "@/components/ui/card";
-import { self } from "@/data/self.data";
-import { Github, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Twitter } from "lucide-react";
 import Link from "next/link";
 
 const socials = [
@@ -13,10 +12,10 @@ const socials = [
     handle: "YashGouravKar1",
   },
   {
-    icon: <Mail size={20} />,
-    href: "mailto:yashgouravkar@gmail.com",
-    label: "Email",
-    handle: self.email,
+    icon: <Linkedin size={20} />,
+    href: "https://www.linkedin.com/in/ygkr/",
+    label: "LinkedIn",
+    handle: "Yash",
   },
   {
     icon: <Github size={20} />,
@@ -29,28 +28,6 @@ const socials = [
 export default function Example() {
   return (
     <div className=" to-gray-960 bg-gradient-to-tl from-gray-950 via-gray-900">
-      {/* <nav className="flex justify-between gap-4 pl-4 pt-4">
-        <Link
-          href={"/"}
-          className=" tracking-tight text-gray-400 duration-300 hover:text-gray-300"
-        >
-          <ArrowLeft className="h-4 w-4 " />
-        </Link>
-        <div className="flex h-fit justify-end gap-4">
-          <Link
-            href={"/certificates"}
-            className="font-bold text-gray-500 duration-500 hover:font-bold hover:text-zinc-300"
-          >
-            Certificates
-          </Link>
-          <Link
-            href={"/contact"}
-            className="font-bold text-gray-500 duration-500 hover:font-bold hover:text-zinc-300"
-          >
-            Contact
-          </Link>
-        </div>
-      </nav> */}
       <Navigation />
       <div className="container mx-auto flex min-h-screen items-center justify-center px-4">
         <div className="mx-auto mt-32 grid w-full grid-cols-1 gap-8 sm:mt-0 sm:grid-cols-3 lg:gap-16">

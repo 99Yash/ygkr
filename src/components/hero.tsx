@@ -28,15 +28,9 @@ const Hero = () => {
         </Link>
         <Link
           className=" z-10 duration-500 hover:font-semibold"
-          href={"/certificates"}
-        >
-          Certificates
-        </Link>
-        <Link
-          className=" z-10 duration-500 hover:font-semibold"
           href={"/contact"}
         >
-          Contact
+          Links
         </Link>
       </ul>
       <h1
@@ -56,9 +50,8 @@ const Hero = () => {
         }}
       >
         <Balancer>
-          Hi, I&apos;m a software developer building Full-stack applications
-          delivering beautiful experiences & looking around open source projects
-          at night.{" "}
+          Hi, I&apos;m a software developer building full-stack applications
+          during the day and looking at open-source projects at night.
         </Balancer>
       </h5>
       <Link

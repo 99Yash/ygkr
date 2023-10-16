@@ -11,7 +11,7 @@ export const projects = [
   {
     name: "devfolio",
     description:
-      "A  Seamless, No-Cost Solution to Simplify Recruiter Recognition. Devfolio is The Ultimate Platform for Backend Developers and Junior Coders to Showcase Their Projects, Professional Journey, and Technical Expertise in the form of a Personal Website. Fully Responsive on all types of devices.",
+      "A  Seamless, No-Cost Solution to Simplify Recruiter Recognition. Devfolio is The Ultimate Platform for Backend Developers and Junior Coders to Showcase Their Projects, Professional Journey, and Technical Expertise in the form of a good-looking Personal Website. Fully Responsive on all types of devices.",
     summary:
       "Devfolio  is aimed at developers who either specialize in backend technologies or are just learning to code. Simply enter some credentials and get a fully responsive portfolio website generated for you that you can then show to potential recruiters or just enjoy certain corner of the internet for yourself. Entire process is free of charge.",
     github: "https://github.com/99Yash/devfolio",

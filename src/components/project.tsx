@@ -33,14 +33,14 @@ export default function Project({ project }: { project: Project }) {
       <span className="z-10 flex w-full flex-col gap-4 rounded-none border  border-gray-800 border-x-transparent border-t-transparent p-4 lg:-ml-20 lg:border-l-0">
         <p className="text-2xl font-bold tracking-tight text-gray-300">
           <Link
-            className="duration-300 group-hover:opacity-70"
+            className="opacity-80 duration-300 group-hover:opacity-100"
             href={`/projects/${project.name}`}
           >
             {project.name[0].toUpperCase() + project.name.slice(1)}
           </Link>
         </p>
         <p
-          className={`${dm_sans.className} text-gray-400 opacity-80 duration-300 group-hover:opacity-90`}
+          className={`${dm_sans.className} text-gray-400 opacity-80 duration-300 group-hover:opacity-100`}
         >
           {project.description}
         </p>

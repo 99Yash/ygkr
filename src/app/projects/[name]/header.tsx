@@ -75,16 +75,14 @@ export const Header = ({ project }: { project: Project }) => {
           </Link>
         </div>
       </div>
-      <div className="container relative isolate mx-auto overflow-hidden  py-24 sm:py-32">
+      <div className="relative isolate mx-auto overflow-hidden py-24  md:container sm:py-32">
         <div className="mx-auto flex max-w-7xl flex-col items-center px-6 text-center lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h1 className="font-display text-4xl font-bold tracking-tight text-white sm:text-6xl">
               {project.name[0].toUpperCase() +
                 project.name.slice(1).toLowerCase()}
             </h1>
-            <p className="mt-6 text-lg leading-8 text-zinc-300">
-              {project.description}
-            </p>
+            <p className="mt-6 text-lg text-zinc-300">{project.description}</p>
           </div>
 
           <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">

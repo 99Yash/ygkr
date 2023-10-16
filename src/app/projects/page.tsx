@@ -3,6 +3,7 @@ import { Particles } from "@/components/ui/particles";
 import { projects } from "@/data/projects.data";
 import { Metadata } from "next";
 import Project from "../../components/project";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Projects Archive",
@@ -51,12 +52,12 @@ export default function Page() {
         </div> */}
         <Navigation />
         <div className="flex flex-col gap-4 ">
-          <h1 className="flex items-center text-4xl font-bold tracking-tight text-gray-200/90">
+          <h1 className="mt-6 flex items-center text-4xl font-bold tracking-tight text-gray-200/90">
             Featured Projects
           </h1>
           <h5 className="text-sm text-gray-400">
             Projects arranged in chronological order of production (earliest
-            first). Click on each project to go to its dedicated page.
+            first). My first OSS contribution is getting merged as we speak.
           </h5>
         </div>
       </header>

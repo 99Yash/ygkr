@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { projects } from "../../../data/projects.data";
 import { Header } from "./header";
+import Image from "next/image";
 
 export async function generateMetadata({
   params,
@@ -40,6 +41,21 @@ const page = ({
           projects.filter(
             (project) => params.name === project.name.toLowerCase(),
           )[0]
+        }
+      />
+      <Image
+        className="self-center"
+        width={600}
+        height={280}
+        src={`/${
+          projects.filter(
+            (project) => params.name === project.name.toLowerCase(),
+          )[0].name
+        }${params.name === "devfolio" ? "2" : ""}.png`}
+        alt={
+          projects.filter(
+            (project) => params.name === project.name.toLowerCase(),
+          )[0].name
         }
       />
     </section>
