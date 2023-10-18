@@ -1,8 +1,20 @@
-"use client";
 import { Navigation } from "@/components/nav";
 import { Card } from "@/components/ui/card";
 import { Github, Linkedin, Twitter } from "lucide-react";
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Contacts",
+  description: "Relevant links to get in touch.",
+  openGraph: {
+    url: "https://ygkr.vercel.app/contact",
+    title: "Contact - ygkr",
+    description: "Relevant links to get in touch.",
+    locale: "en-US",
+    type: "website",
+  },
+};
 
 const socials = [
   {

@@ -28,28 +28,6 @@ export default function Page() {
         ease={30}
       />
       <header className="flex flex-col gap-4 ">
-        {/* <div className=" flex justify-between">
-          <Link
-            href={"/"}
-            className=" tracking-tight text-gray-400 duration-300 hover:text-gray-300"
-          >
-            <ArrowLeft className="h-4 w-4 " />
-          </Link>
-          <div className="flex h-fit justify-end gap-4">
-            <Link
-              href={"/certificates"}
-              className="font-bold text-gray-500 duration-500 hover:font-bold hover:text-zinc-300"
-            >
-              Certificates
-            </Link>
-            <Link
-              href={"/contact"}
-              className="font-bold text-gray-500 duration-500 hover:font-bold hover:text-zinc-300"
-            >
-              Contact
-            </Link>
-          </div>
-        </div> */}
         <Navigation />
         <div className="flex flex-col gap-4 ">
           <h1 className="mt-6 flex items-center text-4xl font-bold tracking-tight text-gray-200/90">

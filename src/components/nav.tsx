@@ -37,13 +37,6 @@ export const Navigation: React.FC = () => {
                 </p>
               </Link>
             )}
-            {pathname !== "/certificates" && (
-              <Link href="/certificates" passHref>
-                <p className="text-zinc-400 duration-200 hover:font-semibold hover:text-zinc-100">
-                  Certificates
-                </p>
-              </Link>
-            )}
             {pathname !== "/contact" && (
               <Link href="/contact" passHref>
                 <p className="text-zinc-400 duration-200 hover:font-semibold hover:text-zinc-100">
