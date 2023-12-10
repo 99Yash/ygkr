@@ -1,6 +1,7 @@
 import { TailwindIndicator } from "@/components/tailwind-indicator";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../styles/globals.css";
@@ -57,6 +58,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <Analytics />
+        <SpeedInsights />
       </head>
       <body
         className={` ${inter.className} relative min-h-screen bg-gray-950 text-gray-400 antialiased scrollbar-hide`}
