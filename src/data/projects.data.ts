@@ -9,20 +9,21 @@ export type Project = {
 
 export const projects = [
   {
-    name: "devfolio",
+    name: "trinsta",
     description:
-      "A  Seamless, No-Cost Solution to Simplify Recruiter Recognition. Devfolio is The Ultimate Platform for Backend Developers and Junior Coders to Showcase Their Projects, Professional Journey, and Technical Expertise in the form of a good-looking Personal Website. Fully Responsive on all types of devices.",
-    summary:
-      "Devfolio  is aimed at developers who either specialize in backend technologies or are just learning to code. Simply enter some credentials and get a fully responsive portfolio website generated for you that you can then show to potential recruiters or just enjoy certain corner of the internet for yourself. Entire process is free of charge.",
-    github: "https://github.com/99Yash/devfolio",
-    site: "https://devfolio-client.vercel.app",
+      "An Innovative Instagram Iteration Developed with the t3-Stack.",
+    summary: "",
+    github: "https://github.com/99Yash/trpc-insta",
+    site: "https://trpc-insta.vercel.app/",
     tech: [
-      "NextJS",
+      "NextJS 13",
       "TypeScript",
-      "ChakraUI",
-      "Clerk-Auth",
-      "MongoDB",
-      "Mongoose",
+      "Shadcn/UI",
+      "Next-Auth",
+      "Prisma",
+      "TRPC",
+      "PlanetScale",
+      "Server Components",
     ],
   },
   {
@@ -43,21 +44,20 @@ export const projects = [
     ],
   },
   {
-    name: "trinsta",
+    name: "devfolio",
     description:
-      "An Innovative Instagram Iteration Developed with the t3-Stack.",
-    summary: "",
-    github: "https://github.com/99Yash/trpc-insta",
-    site: "https://trpc-insta.vercel.app/",
+      "A  Seamless, No-Cost Solution to Simplify Recruiter Recognition. Devfolio is The Ultimate Platform for Backend Developers and Junior Coders to Showcase Their Projects, Professional Journey, and Technical Expertise in the form of a good-looking Personal Website. Fully Responsive on all types of devices.",
+    summary:
+      "Devfolio  is aimed at developers who either specialize in backend technologies or are just learning to code. Simply enter some credentials and get a fully responsive portfolio website generated for you that you can then show to potential recruiters or just enjoy certain corner of the internet for yourself. Entire process is free of charge.",
+    github: "https://github.com/99Yash/devfolio",
+    site: "https://devfolio-client.vercel.app",
     tech: [
-      "NextJS 13",
+      "NextJS",
       "TypeScript",
-      "Shadcn/UI",
-      "Next-Auth",
-      "Prisma",
-      "TRPC",
-      "PlanetScale",
-      "Server Components",
+      "ChakraUI",
+      "Clerk-Auth",
+      "MongoDB",
+      "Mongoose",
     ],
   },
 ] satisfies Project[];
