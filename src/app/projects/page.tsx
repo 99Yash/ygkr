@@ -3,7 +3,6 @@ import { Particles } from "@/components/ui/particles";
 import { projects } from "@/data/projects.data";
 import { Metadata } from "next";
 import Project from "../../components/project";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Projects Archive",
@@ -34,8 +33,7 @@ export default function Page() {
             Featured Projects
           </h1>
           <h5 className="text-sm text-gray-400">
-            Projects arranged in chronological order of production (earliest
-            first). My first OSS contribution is getting merged as we speak.
+            Projects arranged in reverse chronological order of production.
           </h5>
         </div>
       </header>
