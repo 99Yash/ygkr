@@ -51,7 +51,7 @@ const page = ({
           projects.filter(
             (project) => params.name === project.name.toLowerCase(),
           )[0].name
-        }${params.name === "devfolio" ? "2" : ""}.png`}
+        }.png`}
         alt={
           projects.filter(
             (project) => params.name === project.name.toLowerCase(),

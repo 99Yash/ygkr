@@ -9,6 +9,25 @@ export type Project = {
 
 export const projects = [
   {
+    name: "forklifter",
+    description:
+      "🎉 Generates a beautiful portfolio instantly, with pageview analytics, dynamic opengraph images & more... using server components & server actions, next-auth, prisma & shadcn/ui, available for free",
+    summary:
+      "Forklifter  is aimed at developers who either specialize in backend technologies or are just learning to code. Simply enter some credentials and get a fully responsive portfolio website generated for you that you can then show to potential recruiters or just enjoy certain corner of the internet for yourself. Entire process is free of charge.",
+    github: "https://github.com/99Yash/forklifter",
+    site: "https://forklifter.vercel.app",
+    tech: [
+      "NextJS",
+      "React Server Components",
+      "Server Actions",
+      "TypeScript",
+      "Prisma",
+      "Shadcn/ui",
+      "Next-Auth",
+      "MongoDB",
+    ],
+  },
+  {
     name: "trinsta",
     description:
       "An Innovative Instagram Iteration Developed with the t3-Stack.",
@@ -41,23 +60,6 @@ export const projects = [
       "Prisma",
       "PlanetScale",
       "Server Components",
-    ],
-  },
-  {
-    name: "devfolio",
-    description:
-      "A  Seamless, No-Cost Solution to Simplify Recruiter Recognition. Devfolio is The Ultimate Platform for Backend Developers and Junior Coders to Showcase Their Projects, Professional Journey, and Technical Expertise in the form of a good-looking Personal Website. Fully Responsive on all types of devices.",
-    summary:
-      "Devfolio  is aimed at developers who either specialize in backend technologies or are just learning to code. Simply enter some credentials and get a fully responsive portfolio website generated for you that you can then show to potential recruiters or just enjoy certain corner of the internet for yourself. Entire process is free of charge.",
-    github: "https://github.com/99Yash/devfolio",
-    site: "https://devfolio-client.vercel.app",
-    tech: [
-      "NextJS",
-      "TypeScript",
-      "ChakraUI",
-      "Clerk-Auth",
-      "MongoDB",
-      "Mongoose",
     ],
   },
 ] satisfies Project[];
