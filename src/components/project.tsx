@@ -1,5 +1,6 @@
 "use client";
-import { Project } from "@/data/projects.data";
+
+import { type Project } from "@/data/projects.data";
 import { DM_Sans } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";

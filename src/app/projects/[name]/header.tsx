@@ -82,7 +82,9 @@ export const Header = ({ project }: { project: Project }) => {
               {project.name[0].toUpperCase() +
                 project.name.slice(1).toLowerCase()}
             </h1>
-            <p className="mt-6 text-lg text-zinc-300">{project.description}</p>
+            <p className="mt-6 text-lg text-zinc-300">
+              {project.summary ? project.summary : project.description}
+            </p>
           </div>
 
           <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
