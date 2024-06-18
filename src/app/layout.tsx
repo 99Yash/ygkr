@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
   title: {
-    default: "ygkr",
+    default: "Yash",
     template: "%s - ygkr",
   },
   description:
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "../../public/Screenshot_20230917_114024.png",
+        url: "https://ygkr.vercel.app/og.png",
         width: 1920,
         height: 1080,
       },
@@ -46,6 +46,9 @@ export const metadata: Metadata = {
   twitter: {
     title: "Yash",
     card: "summary_large_image",
+  },
+  icons: {
+    shortcut: "/assets/yk_black.png",
   },
 };
 

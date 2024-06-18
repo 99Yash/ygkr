@@ -1,7 +1,7 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import { projects } from "../../../data/projects.data";
 import { Header } from "./header";
-import Image from "next/image";
 
 export async function generateMetadata({
   params,
@@ -47,7 +47,7 @@ const page = ({
         className="self-center"
         width={600}
         height={280}
-        src={`/${
+        src={`/assets/${
           projects.filter(
             (project) => params.name === project.name.toLowerCase(),
           )[0].name

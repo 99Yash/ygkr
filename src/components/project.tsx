@@ -26,12 +26,12 @@ export default function Project({ project }: { project: Project }) {
         <Image
           width={580}
           height={480}
-          src={`/${project.name}.png`}
+          src={`/assets/${project.name}.png`}
           alt={project.name}
         />
       </div>
       <div className="absolute left-0 top-0 hidden h-full w-[85%] bg-gradient-to-r from-transparent via-black/80 to-transparent opacity-100 duration-300 group-hover:opacity-80 lg:block" />
-      <span className="z-10 flex w-full flex-col gap-4 rounded-none border  border-gray-800 border-x-transparent border-t-transparent p-4 lg:-ml-20 lg:border-l-0">
+      <span className="z-10 flex w-full flex-col gap-4 rounded-none border border-gray-800 border-x-transparent border-t-transparent p-4 lg:-ml-20 lg:border-l-0">
         <p className="text-2xl font-bold tracking-tight text-gray-300">
           <Link
             className="opacity-80 duration-300 group-hover:opacity-100"
@@ -47,7 +47,7 @@ export default function Project({ project }: { project: Project }) {
         </p>
         <ul className="flex w-fit flex-wrap gap-2 bg-gradient-to-r from-slate-400 via-blue-300 to-slate-300 bg-clip-text text-transparent">
           {project.tech.map((tech, idx) => (
-            <li key={idx} className=" font-mono text-xs">
+            <li key={idx} className="font-mono text-xs">
               {tech}
             </li>
           ))}
