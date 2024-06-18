@@ -2,19 +2,10 @@ import { self } from "@/data/self.data";
 import Link from "next/link";
 import Balancer from "react-wrap-balancer";
 import ButtonBackgroundShine from "./ui/button-bg-shine";
-import { Particles } from "./ui/particles";
 
 const Hero = () => {
   return (
     <div className="flex w-4/5 flex-col items-center justify-center gap-6">
-      <Particles
-        className="animate-fade-in absolute inset-0"
-        color="#8daab5"
-        quantity={60}
-        ease={30}
-        vx={0.1}
-        vy={-0.3}
-      />
       <ul
         className="text- flex animate-fade-down gap-4 text-xs text-gray-400 md:text-sm"
         style={{
