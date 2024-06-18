@@ -38,7 +38,7 @@ export const Header = ({ project }: { project: Project }) => {
         className={`fixed inset-x-0 top-0 z-50 border-b backdrop-blur duration-200 lg:bg-transparent lg:backdrop-blur-none ${
           isIntersecting
             ? "border-transparent bg-zinc-900/0"
-            : "border-zinc-200  bg-white/10 lg:border-transparent"
+            : "border-zinc-200 bg-white/10 lg:border-transparent"
         }`}
       >
         <div className="container mx-auto flex flex-row-reverse items-center justify-between p-6">
@@ -47,7 +47,7 @@ export const Header = ({ project }: { project: Project }) => {
               <Twitter
                 className={`h-6 w-6 duration-200 hover:font-medium ${
                   isIntersecting
-                    ? " text-zinc-400 hover:text-zinc-100"
+                    ? "text-zinc-400 hover:text-zinc-100"
                     : "text-zinc-600 hover:text-zinc-900"
                 } `}
               />
@@ -56,7 +56,7 @@ export const Header = ({ project }: { project: Project }) => {
               <Github
                 className={`h-6 w-6 duration-200 hover:font-medium ${
                   isIntersecting
-                    ? " text-zinc-400 hover:text-zinc-100"
+                    ? "text-zinc-400 hover:text-zinc-100"
                     : "text-zinc-600 hover:text-zinc-900"
                 } `}
               />
@@ -67,22 +67,22 @@ export const Header = ({ project }: { project: Project }) => {
             href="/projects"
             className={`duration-200 hover:font-medium ${
               isIntersecting
-                ? " text-zinc-400 hover:text-zinc-100"
+                ? "text-zinc-400 hover:text-zinc-100"
                 : "text-zinc-600 hover:text-zinc-900"
             } `}
           >
-            <ArrowLeft className="h-6 w-6 " />
+            <ArrowLeft className="h-6 w-6" />
           </Link>
         </div>
       </div>
-      <div className="relative isolate mx-auto overflow-hidden py-24  md:container sm:py-32">
+      <div className="relative isolate mx-auto overflow-hidden py-24 md:container sm:py-32">
         <div className="mx-auto flex max-w-7xl flex-col items-center px-6 text-center lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h1 className="font-display text-4xl font-bold tracking-tight text-white sm:text-6xl">
               {project.name[0].toUpperCase() +
                 project.name.slice(1).toLowerCase()}
             </h1>
-            <p className="mt-6 text-lg text-zinc-300">
+            <p className="mt-6 font-medium text-muted-foreground">
               {project.summary ? project.summary : project.description}
             </p>
           </div>
