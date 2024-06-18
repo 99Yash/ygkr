@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className="flex w-4/5 flex-col items-center justify-center gap-6">
       <ul
-        className="text- flex animate-fade-down gap-4 text-xs text-gray-400 md:text-sm"
+        className="flex animate-fade-down gap-4 text-xs text-gray-400 md:text-sm"
         style={{
           animationDelay: "0.25s",
           animationFillMode: "forwards",
@@ -27,7 +27,7 @@ const Hero = () => {
         </Link>
       </ul>
       <h1
-        className="animate-fade-down cursor-default bg-gradient-to-r from-slate-600 via-slate-200 to-slate-600 bg-clip-text text-4xl font-semibold tracking-tight text-transparent md:text-5xl lg:text-6xl lg:tracking-[-0.24rem]"
+        className="animate-fade-down cursor-default bg-gradient-to-r from-slate-600 via-slate-200 to-slate-600 bg-clip-text text-4xl font-semibold tracking-tight text-transparent md:text-5xl lg:text-6xl lg:tracking-[-0.2rem]"
         style={{
           animationDelay: "0.20s",
           animationFillMode: "forwards",
