@@ -1,62 +1,68 @@
-import { self } from "@/data/self.data";
-import Link from "next/link";
-import Balancer from "react-wrap-balancer";
-import ButtonBackgroundShine from "./ui/button-bg-shine";
+"use client";
 
-const Hero = () => {
-  return (
-    <div className="flex w-4/5 flex-col items-center justify-center gap-6">
-      <ul
-        className="flex animate-fade-down gap-4 text-xs text-gray-400 md:text-sm"
-        style={{
-          animationDelay: "0.25s",
-          animationFillMode: "forwards",
-        }}
-      >
-        <Link
-          className="z-10 duration-500 hover:font-semibold"
-          href={"/projects"}
-        >
-          Projects
-        </Link>
-        <Link
-          className="z-10 duration-500 hover:font-semibold"
-          href={"/contact"}
-        >
-          Links
-        </Link>
-      </ul>
-      <h1
-        className="animate-fade-down cursor-default bg-gradient-to-r from-slate-600 via-slate-200 to-slate-600 bg-clip-text text-4xl font-semibold tracking-tight text-transparent md:text-5xl lg:text-6xl lg:tracking-[-0.2rem]"
-        style={{
-          animationDelay: "0.20s",
-          animationFillMode: "forwards",
-        }}
-      >
-        <Balancer>{self.name}</Balancer>
-      </h1>
-      <h5
-        className="md:text-md animate-fade-down text-center text-sm text-gray-400"
-        style={{
-          animationDelay: "0.3s",
-          animationFillMode: "forwards",
-        }}
-      >
-        <Balancer>
-          Full-time software developer building applications with React and
-          TRPC.
-        </Balancer>
-      </h5>
-      <Link
-        href={`mailto:yashgouravkar@gmail.com`}
-        target="_blank"
-        rel="noreferrer"
-        className="z-10"
-      >
-        <ButtonBackgroundShine text="Get in touch!" />
-      </Link>
-    </div>
-  );
+import { PrimaryButton } from "@/components/ui/button";
+import { self } from "@/data/self.data";
+import { cn } from "@/lib/utils";
+import { motion, useInView } from "framer-motion";
+import { GeistSans } from "geist/font/sans";
+import { MailSearch } from "lucide-react";
+import Link from "next/link";
+import { useRef } from "react";
+
+const variants = {
+  initial: {
+    y: 40,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+  },
 };
 
-export default Hero;
+export default function Hero() {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const isInView = useInView(containerRef, { once: false, margin: "-100px" });
+
+  return (
+    <motion.div
+      className="space-y-6 md:my-16"
+      ref={containerRef}
+      initial="initial"
+      animate={isInView ? "animate" : "initial"}
+      variants={variants}
+    >
+      <div className="flex flex-col-reverse gap-8 md:flex-row md:justify-between">
+        <motion.div
+          className="flex flex-col gap-4 will-change-[transform,opacity] md:max-w-xl"
+          initial={{
+            y: 40,
+            opacity: 0,
+          }}
+          animate={{
+            y: 0,
+            opacity: 1,
+          }}
+          transition={{
+            duration: 0.5,
+          }}
+        >
+          <h1 className="bg-gradient-to-b from-slate-300/90 via-slate-300 to-slate-400 bg-clip-text font-title text-2xl font-bold leading-9 text-transparent sm:text-4xl sm:leading-[3.5rem]">
+            Hi, I{`'`}m Yash.
+          </h1>
+          <p className={cn("text-sm text-card", GeistSans.className)}>
+            Full-time software engineer from India, building beautiful products
+            for the web.
+          </p>
+          <Link
+            target="_blank"
+            className="mt-2 w-fit"
+            href={`mailto:${self.email}`}
+          >
+            <PrimaryButton shiny label="Get in Touch" IconLeft={MailSearch} />
+          </Link>
+        </motion.div>
+      </div>
+    </motion.div>
+  );
+}

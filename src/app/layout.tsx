@@ -4,8 +4,10 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import GlowTop from "../../public/assets/gradient-background-top.png";
 
 import { Inter } from "next/font/google";
+import Image from "next/image";
 import { cn } from "../lib/utils";
 import "../styles/globals.css";
 
@@ -95,6 +97,24 @@ export default function RootLayout({
           haptikBold.variable,
         )}
       >
+        <main
+          className={cn(
+            "min-h-screen font-sans antialiased",
+            inter.variable,
+            calcom.variable,
+          )}
+        >
+          <div className="absolute left-1/2 top-0 -z-10 -translate-x-1/2 opacity-80">
+            <Image
+              src={GlowTop}
+              className="max-w-[55vw]"
+              width={1404}
+              height={778}
+              alt="Glow Top"
+            />
+          </div>
+          {children}
+        </main>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           {children}
           <TailwindIndicator />
