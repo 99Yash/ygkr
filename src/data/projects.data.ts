@@ -28,7 +28,7 @@ export const projects = [
     ],
   },
   {
-    name: "trinsta",
+    name: "trpc-insta",
     description:
       "An Innovative Instagram Iteration Developed with the t3-Stack.",
     summary: "",

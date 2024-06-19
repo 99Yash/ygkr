@@ -88,35 +88,27 @@ export default function RootLayout({
         <Analytics />
         <SpeedInsights />
       </head>
+
       <body
         className={cn(
-          "relative min-h-screen bg-gray-950 text-gray-400 antialiased scrollbar-hide",
+          "min-h-screen font-sans antialiased scrollbar-hide",
           inter.variable,
           calcom.variable,
           haptik.variable,
           haptikBold.variable,
         )}
       >
-        <main
-          className={cn(
-            "min-h-screen font-sans antialiased",
-            inter.variable,
-            calcom.variable,
-          )}
-        >
-          <div className="absolute left-1/2 top-0 -z-10 -translate-x-1/2 opacity-80">
-            <Image
-              src={GlowTop}
-              className="max-w-[55vw]"
-              width={1404}
-              height={778}
-              alt="Glow Top"
-            />
-          </div>
-          {children}
-        </main>
+        <div className="absolute left-1/2 top-0 -z-10 -translate-x-1/2 opacity-80">
+          <Image
+            src={GlowTop}
+            className="max-w-[55vw]"
+            width={1404}
+            height={778}
+            alt="Glow Top"
+          />
+        </div>
+        {children}
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          {children}
           <TailwindIndicator />
         </ThemeProvider>
       </body>
