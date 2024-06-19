@@ -87,7 +87,7 @@ export default function FeaturedProjects({ projects }: ProjectsProps) {
               src={`/assets/${project.name}.png`}
               width={1280}
               height={832}
-              imageClassName="group-hover:scale-110"
+              imageClassName="group-hover:scale-110 brightness-75"
               alt={project.name}
               className="rounded-lg"
             />
