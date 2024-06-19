@@ -1,8 +1,9 @@
-import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
+import * as React from "react";
 
 import { cn } from "@/lib/utils";
+import { LucideIcon, SparkleIcon } from "lucide-react";
 
 const buttonVariants = cva(
   "inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:focus-visible:ring-gray-300",
@@ -54,5 +55,93 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   },
 );
 Button.displayName = "Button";
+
+export const PrimaryButton: React.FC<Props> = ({
+  className,
+  IconLeft,
+  label,
+  IconRight,
+  shiny = false,
+}) => {
+  return (
+    <div className="group/button relative">
+      <div
+        aria-hidden
+        className="absolute -inset-0.5 rounded-lg bg-white opacity-0 blur-2xl transition duration-300 group-hover/button:opacity-30"
+      />
+      <div
+        className={cn(
+          "relative flex h-10 items-center gap-2 rounded-lg px-4 text-sm font-semibold text-black duration-1000 group-hover:bg-white/90 dark:group-hover:bg-gray-800/90",
+          {
+            "bg-white": !shiny,
+            "bg-gradient-to-r from-white/80 to-white": shiny,
+          },
+          className,
+        )}
+      >
+        {IconLeft ? <IconLeft className="h-4 w-4" /> : null}
+        {label}
+        {IconRight ? <IconRight className="h-4 w-4" /> : null}
+
+        {shiny && (
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 rounded-[inherit] bg-[linear-gradient(110deg,transparent,35%,rgba(255,255,255,.7),75%,transparent)] bg-[length:200%_100%] opacity-0 group-hover/button:animate-button-shine group-hover/button:[animation-delay:.2s]"
+          />
+        )}
+      </div>
+    </div>
+  );
+};
+
+type Props = {
+  className?: string;
+  IconLeft?: LucideIcon;
+  label: string;
+  IconRight?: LucideIcon;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
+  shiny?: boolean;
+};
+
+export const SecondaryButton: React.FC<Props> = ({
+  className,
+  IconLeft,
+  label,
+  IconRight,
+}) => {
+  return (
+    <div
+      className={cn(
+        "flex h-10 items-center gap-2 px-4 text-white/70 duration-500 hover:text-white",
+        className,
+      )}
+    >
+      {IconLeft ? <IconLeft className="h-4 w-4" /> : null}
+      {label}
+      {IconRight ? <IconRight className="h-4 w-4" /> : null}
+    </div>
+  );
+};
+
+export const RainbowDarkButton: React.FC<Props> = ({
+  className,
+  label,
+  IconRight,
+}) => {
+  return (
+    <div
+      className={cn(
+        "hero-hiring-gradient relative z-50 mx-auto w-fit rounded-full p-[.75px]",
+        className,
+      )}
+    >
+      <div className="flex-block flex items-center gap-4 rounded-full px-3 py-1.5 text-sm text-white [background-image:radial-gradient(141.42%_141.42%_at_100%_0%,_rgba(255,255,255,0.00)_0%,rgba(255,255,255,.05)_100%),linear-gradient(black,black)]">
+        <SparkleIcon className="text-white" />
+        {label}
+        {IconRight ? <IconRight className="h-4 w-4" /> : null}
+      </div>
+    </div>
+  );
+};
 
 export { Button, buttonVariants };

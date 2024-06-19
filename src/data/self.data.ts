@@ -3,6 +3,7 @@ export const self = {
   email: `yashgouravkar@gmail.com`,
   twitter: `https://twitter.com/YashGouravKar1`,
   github: `https://github.com/99Yash`,
+  linkedin: "https://www.linkedin.com/in/ygkr/",
   techStack: [
     "React",
     "NextJS",

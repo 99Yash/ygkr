@@ -3,14 +3,39 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
+import localFont from "next/font/local";
+import GlowTop from "../../public/assets/gradient-background-top.png";
+
 import { Inter } from "next/font/google";
+import Image from "next/image";
+import { cn } from "../lib/utils";
 import "../styles/globals.css";
 
-const inter = Inter({ subsets: ["latin"], display: "swap" });
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
+
+const calcom = localFont({
+  src: "../../public/fonts/CalSans-SemiBold.woff2",
+  variable: "--font-title",
+});
+
+const haptik = localFont({
+  src: "../../public/fonts/GT-Haptik-Regular.ttf",
+  variable: "--font-google",
+});
+
+const haptikBold = localFont({
+  src: "../../public/fonts/GT-Haptik-Bold.ttf",
+  variable: "--font-gb",
+  weight: "800",
+});
 
 export const metadata: Metadata = {
   title: {
-    default: "ygkr",
+    default: "Yash",
     template: "%s - ygkr",
   },
   description:
@@ -26,7 +51,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "../../public/Screenshot_20230917_114024.png",
+        url: "https://ygkr.vercel.app/og.png",
         width: 1920,
         height: 1080,
       },
@@ -47,6 +72,9 @@ export const metadata: Metadata = {
     title: "Yash",
     card: "summary_large_image",
   },
+  icons: {
+    shortcut: "/assets/yk_black.png",
+  },
 };
 
 export default function RootLayout({
@@ -60,11 +88,27 @@ export default function RootLayout({
         <Analytics />
         <SpeedInsights />
       </head>
+
       <body
-        className={` ${inter.className} relative min-h-screen bg-gray-950 text-gray-400 antialiased scrollbar-hide`}
+        className={cn(
+          "min-h-screen font-sans antialiased scrollbar-hide",
+          inter.variable,
+          calcom.variable,
+          haptik.variable,
+          haptikBold.variable,
+        )}
       >
+        <div className="absolute left-1/2 top-0 -z-10 -translate-x-1/2 opacity-80">
+          <Image
+            src={GlowTop}
+            className="max-w-[55vw]"
+            width={1404}
+            height={778}
+            alt="Glow Top"
+          />
+        </div>
+        {children}
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          {children}
           <TailwindIndicator />
         </ThemeProvider>
       </body>
