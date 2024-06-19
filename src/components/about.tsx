@@ -67,7 +67,7 @@ const AboutMe = ({ bio, twitter, linkedin, github, techStack }: Props) => {
           duration: 0.3,
         }}
       >
-        General info
+        About
       </motion.h2>
       <motion.div
         className="mt-12 grid gap-4"

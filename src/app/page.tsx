@@ -1,9 +1,9 @@
 import AboutMe from "@/components/about";
+import Connect from "@/components/connect";
 import Experiences from "@/components/experiences";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import FeaturedProjects from "@/components/projects";
-import Connect from "@/components/utils/connect";
 import { experiences } from "@/data/experience.data";
 import { projects } from "@/data/projects.data";
 import { self } from "@/data/self.data";
