@@ -32,7 +32,7 @@ const Header = () => {
       className={cn(
         "fixed inset-x-0 top-4 z-40 mx-auto flex h-[60px] max-w-5xl items-center justify-between rounded-2xl bg-transparent/30 px-8 shadow-2xl saturate-100 backdrop-blur-[30px] transition-all duration-300",
         isScrolled &&
-          "top-px h-[68px] bg-slate-950/80 px-4 shadow-xl backdrop-blur-[7px] transition-all duration-300",
+          "top-2 h-[68px] px-4 shadow-xl backdrop-blur-[7px] transition-all duration-300",
       )}
       initial={{
         y: -100,

@@ -50,7 +50,9 @@ export default function Hero() {
           <h1 className="bg-gradient-to-b from-slate-300/90 via-slate-300 to-slate-400 bg-clip-text font-title text-2xl font-bold leading-9 text-transparent sm:text-4xl sm:leading-[3.5rem]">
             Hi, I{`'`}m Yash.
           </h1>
-          <p className={cn("text-sm text-card", GeistSans.className)}>
+          <p
+            className={cn("text-sm text-muted-foreground", GeistSans.className)}
+          >
             Full-time software engineer from India, building beautiful products
             for the web.
           </p>

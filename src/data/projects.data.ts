@@ -15,14 +15,13 @@ export const projects = [
     summary:
       "Forklifter is aimed at developers who either specialize in backend technologies or are just learning to code. Simply add your projects and get a fully responsive portfolio website generated for you that you can then show to potential recruiters. This supports adding your open source projects, personal projects, and even past work experience. Now with pageview analytics + dynamic opengraph images",
     github: "https://github.com/99Yash/forklifter",
-    site: "https://forklifter.vercel.app",
+    site: "https://forklifter.vercel.app/",
     tech: [
       "NextJS",
-      "React Server Components",
       "Server Actions",
       "TypeScript",
       "Prisma",
-      "Shadcn/ui",
+      "shadcn/ui",
       "Next-Auth",
       "MongoDB",
     ],
@@ -37,7 +36,7 @@ export const projects = [
     tech: [
       "NextJS 13",
       "TypeScript",
-      "Shadcn/UI",
+      "shadcn/ui",
       "Next-Auth",
       "Prisma",
       "TRPC",
@@ -48,14 +47,14 @@ export const projects = [
   {
     name: "shreddiit",
     description:
-      "Social Hub for Real-time Engaging Discussions : Shreddiit is a Reddit-like application for building a personalized community aimed at revolutionizing social discourse. A Dynamic Online Hub Engineered to foster a culture of 'anonymous' resource sharing among Peers. Built this so that my college mates can anonymously share valuable resources & their opinions Respectfully without being judged or shamed for it. Using the latest developments in the React ecosystem :",
+      "Reddit-like application for building a personalized community aimed at revolutionizing social discourse at my college.",
     github: "https://github.com/99Yash/shreddiit",
     summary: "",
-    site: "https://shreddiit.vercel.app",
+    site: "https://shreddiit.vercel.app/",
     tech: [
       "NextJS 13",
       "TypeScript",
-      "Shadcn/UI",
+      "shadcn/ui",
       "Clerk-Auth",
       "Prisma",
       "PlanetScale",

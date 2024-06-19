@@ -71,7 +71,7 @@ export const PrimaryButton: React.FC<Props> = ({
       />
       <div
         className={cn(
-          "relative flex h-10 items-center gap-2 rounded-lg px-4 text-sm font-semibold text-black duration-1000 group-hover:bg-white/90",
+          "relative flex h-10 items-center gap-2 rounded-lg px-4 text-sm font-semibold text-black duration-1000 group-hover:bg-white/90 dark:group-hover:bg-gray-800/90",
           {
             "bg-white": !shiny,
             "bg-gradient-to-r from-white/80 to-white": shiny,
