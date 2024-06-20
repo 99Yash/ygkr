@@ -57,10 +57,10 @@ export default function Hero() {
             )}
           >
             <b>Hi, I&apos;m Yash</b>, a full-time engineer from India, building
-            beautiful products for the web. I have had the absolute pleasure of
-            working with some of the smalllest of startups, with really amazing
-            people in this short of a career. I&apos;m self-taught and looking
-            for a new challenge. Hit me up if you like my work.
+            products for the web. I&apos;ve had the absolute pleasure of working
+            with some of the smallest of startups, with really amazing people in
+            my brief career. I&apos;m totally self-taught and looking for a new
+            gig. Hit me up if you like my work.
           </p>
           <Link
             target="_blank"
