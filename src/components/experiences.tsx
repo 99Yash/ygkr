@@ -77,7 +77,7 @@ export default function Experiences({ experiences }: Props) {
       transition={{
         duration: 0.5,
       }}
-      id="experiences"
+      id="engineering"
       className="my-24 will-change-[transform,opacity]"
     >
       <motion.h2

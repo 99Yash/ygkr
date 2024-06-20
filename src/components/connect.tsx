@@ -1,9 +1,11 @@
 "use client";
 
+import { self } from "@/data/self.data";
 import { motion, useInView } from "framer-motion";
-import { Github, Link2Icon, Linkedin, Twitter } from "lucide-react";
+import { Github, Link2Icon, Linkedin, MailSearch, Twitter } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import { PrimaryButton } from "./ui/button";
 
 type Props = {
   twitter: string;
@@ -55,6 +57,23 @@ const Connect = ({ twitter, linkedin, github }: Props) => {
       >
         What{`'`}s Next
       </motion.h2>
+      <motion.p
+        className="mx-auto mt-4 max-w-md text-center text-sm text-muted-foreground"
+        initial={{
+          y: 30,
+          opacity: 0,
+        }}
+        animate={{
+          y: 0,
+          opacity: 1,
+        }}
+        transition={{
+          duration: 0.3,
+        }}
+      >
+        All the relevant links are here
+      </motion.p>
+
       <motion.div className="my-12 flex flex-col gap-6 rounded-xl p-4 shadow-feature-card-dark lg:p-6">
         <div className="flex items-center gap-2">
           <Link2Icon className="h-[18px] w-[18px]" />
@@ -83,6 +102,13 @@ const Connect = ({ twitter, linkedin, github }: Props) => {
             );
           })}
         </div>
+        <Link
+          target="_blank"
+          className="mt-2 self-center"
+          href={`mailto:${self.email}`}
+        >
+          <PrimaryButton shiny label="Open Mail" IconLeft={MailSearch} />
+        </Link>
       </motion.div>
     </motion.div>
   );

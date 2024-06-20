@@ -97,8 +97,8 @@ export default Header;
 const HEADER_LINKS = [
   {
     icon: <Building className="h-4 w-4" />,
-    hash: "#experiences",
-    text: "Experience",
+    hash: "#engineering",
+    text: "Engineering",
   },
   {
     icon: <Folders className="h-4 w-4" />,
