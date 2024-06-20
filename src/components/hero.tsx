@@ -56,7 +56,7 @@ export default function Hero() {
               GeistSans.className,
             )}
           >
-            <b>Hi, I&apos;m Yash</b>, a full-time engineer from India, building
+            <b>Hi, I&apos;m Yash</b> - a full-time engineer from India, building
             products for the web. I&apos;ve had the absolute pleasure of working
             with some of the smallest of startups, with really amazing people in
             my brief career. I&apos;m totally self-taught and looking for a new

@@ -47,7 +47,7 @@ export const projects = [
   {
     name: "shreddiit",
     description:
-      "Reddit-like application for building a personalized community aimed at revolutionizing social discourse at my college.",
+      "A Reddit-like application for building a personalized community aimed at revolutionizing social discourse at my alma-mater (NIT Rourkela)",
     github: "https://github.com/99Yash/shreddiit",
     summary: "",
     site: "https://shreddiit.vercel.app/",
