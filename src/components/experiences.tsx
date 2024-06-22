@@ -141,10 +141,10 @@ export default function Experiences({ experiences }: Props) {
                     )}
                     {work.currentlyWorking && "Since"}{" "}
                     {formatDate(work.startDate)}
-                    {work.endDate && (
+                    {!work.currentlyWorking && (
                       <>
                         {" - "}
-                        {formatDate(work.endDate)}
+                        {formatDate(work.endDate!)}
                       </>
                     )}
                   </div>

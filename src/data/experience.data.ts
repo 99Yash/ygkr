@@ -31,4 +31,22 @@ export const experiences = [
       "MongoDB",
     ],
   },
+  {
+    position: "Founding Engineer",
+    company: "Labquote",
+    summary: "I'm building a platform for Americans to auction equipments.",
+    description: "Labquote is a platform for Americans to auction equipments. ",
+    site: "https://labquote.vercel.app/",
+    startDate: "2024 May",
+    endDate: undefined,
+    currentlyWorking: true,
+    tech: [
+      "NextJS",
+      "TypeScript",
+      "Prisma",
+      "shadcn/ui",
+      "Supabase",
+      "PostgreSQL",
+    ],
+  },
 ] satisfies Experience[];
