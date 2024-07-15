@@ -103,7 +103,7 @@ const HEADER_LINKS = [
   {
     icon: <Folders className="h-4 w-4" />,
     hash: "#projects",
-    text: "Projects",
+    text: "Collective",
   },
   // {
   //   icon: <GitMerge className="h-4 w-4" />,

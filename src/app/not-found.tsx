@@ -21,10 +21,10 @@ const NotFound = () => {
         role="presentation"
         priority
       />
-      <h1 className="font-title text-center text-4xl font-bold">
+      <h1 className="text-center font-title text-4xl font-bold text-gray-300">
         Sorry, this page isn&apos;t available
       </h1>
-      <p className="text-center text-muted">
+      <p className="text-center text-sm text-muted-foreground">
         The link you followed doesn&apos;t exist or has been removed.
       </p>
       <Link

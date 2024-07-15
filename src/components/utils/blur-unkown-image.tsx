@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { cn } from '@/lib/utils';
-import NextImage from 'next/image';
-import * as React from 'react';
+import { cn } from "@/lib/utils";
+import NextImage from "next/image";
+import * as React from "react";
 
 type ImageProps = {
   imageClassName?: string;
@@ -18,31 +18,30 @@ export const BlurUnknownImage = React.forwardRef<HTMLDivElement, ImageProps>(
     return (
       <div
         className={cn(
-          'overflow-hidden',
-          isLoading && 'animate-pulse',
-          className
+          "overflow-hidden",
+          isLoading && "animate-pulse",
+          className,
         )}
         ref={ref}
       >
         <img
           className={cn(
-            isLoading && 'scale-[1.02] blur-xl grayscale',
-            imageClassName
+            isLoading && "scale-[1.02] blur-xl grayscale",
+            imageClassName,
           )}
           style={{
-            transition: 'filter 700ms ease, transform 150ms ease',
+            transition: "filter 700ms ease, transform 150ms ease",
           }}
           src={src}
           alt={alt}
-          loading={lazy ? 'lazy' : undefined}
-          priority={!lazy}
+          loading={lazy ? "lazy" : undefined}
           quality={100}
           onLoad={() => setLoading(false)}
           {...rest}
         />
       </div>
     );
-  }
+  },
 );
 
-BlurUnknownImage.displayName = 'Image';
+BlurUnknownImage.displayName = "Image";

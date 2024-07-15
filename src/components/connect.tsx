@@ -75,9 +75,9 @@ const Connect = ({ twitter, linkedin, github }: Props) => {
       </motion.p>
 
       <motion.div className="my-12 flex flex-col gap-6 rounded-xl p-4 shadow-feature-card-dark lg:p-6">
-        <div className="flex items-center gap-2">
-          <Link2Icon className="h-[18px] w-[18px]" />
-          <h2 className="font-title text-sm">I{`'`}ll be in touch...</h2>
+        <div className="flex items-center gap-1 self-center">
+          <Link2Icon className="h-[18px] w-[18px] -rotate-45" />
+          <h2 className="font-title text-sm">I{`'`}ll be in touch</h2>
         </div>
         <div className="grid h-full grid-cols-1 gap-4 px-2 md:grid-cols-3">
           {[twitter, linkedin, github].map((link, i) => {
