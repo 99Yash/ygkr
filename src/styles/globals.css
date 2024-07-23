@@ -6,9 +6,12 @@
   background-color: rgb(164, 165, 165);
   color: rgb(13, 7, 3);
 }
-/* In your Tailwind CSS stylesheet or a separate CSS file */
+
 .gradient-brightness {
   background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+}
+html {
+  scroll-padding-top: 120px;
 }
 
 @layer base {

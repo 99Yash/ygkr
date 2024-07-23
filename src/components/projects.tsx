@@ -46,6 +46,7 @@ export default function FeaturedProjects({ projects }: ProjectsProps) {
       transition={{
         duration: 0.5,
       }}
+      id="projects"
       className="relative my-24 will-change-[transform,opacity]"
     >
       <motion.h2
