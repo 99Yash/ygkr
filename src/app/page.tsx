@@ -17,7 +17,7 @@ export default function Home() {
         <Hero />
         <AboutMe
           bio={
-            "I have been really lucky in my life as I have had the pleasure to work with really small teams, where I work directly with the founder. I'm self-taught and looking for a new challenge. Hit me up if this is something you are interested in."
+            "I'm a 2024 grad from India; having already 1 year of working experience in a number of very small US startups in their 0-1 phase that evidently made me a Founding Engineer in this short span of time. TL;DR: Experienced in everything React - Typescript and experienced in building apps from scratch (no designs) and implementing all aspects of a software: from an internal UI library to a secure API & unconventional db design."
           }
           github={self.github}
           twitter={self.twitter}
