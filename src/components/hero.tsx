@@ -56,11 +56,14 @@ export default function Hero() {
               GeistSans.className,
             )}
           >
-            <b>Hi, I&apos;m Yash</b> - a full-time engineer from India, building
-            products with React & TRPC. I&apos;ve had the absolute pleasure of
-            working with some of the smallest of teams, having really amazing
-            people in this brief of a career. I&apos;m totally self-taught and
-            looking for a new gig. Hit me up if you like my work.
+            <b>Hi, I&apos;m Yash</b> - I`m a 2024 grad from India; having
+            already 1 year of working experience in a number of very small US
+            startups in their 0-1 phase that evidently made me a Founding
+            Engineer in this short span of time. <b>TL;DR</b>: Experienced in
+            everything React - Typescript and experienced in building apps from
+            scratch (no designs) and implementing all aspects of a software:
+            from an internal UI library to a secure API & unconventional db
+            design
           </p>
           <Link
             target="_blank"
