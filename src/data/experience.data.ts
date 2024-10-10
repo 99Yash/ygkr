@@ -2,7 +2,7 @@ export type Experience = {
   position: string;
   company: string;
   summary: string;
-  description: React.ReactNode;
+  description: string;
   site: string;
   startDate: string;
   endDate?: string;
