@@ -36,15 +36,15 @@ export const experiences = [
     company: "Labquote",
     summary: "I'm building a platform for Americans to auction equipments.",
     description: `- Architected an application centered around auctioning of laboratory equipments
-- Built on the philosophy of lowest first: "buyers" post listings and "sellers" bid on the item. Lowest bidder wins. Currently supporting 10 different types of listings, including Remote Support and Instrument Leasing.
-- Sellers can choose to be notified against selling of specific instruments for specific listings, implemented a dynamic 2-dimensional checkbox table to empower the user to edit their preferences.
+- Built on the philosophy of lowest first: "buyers" post listings and "sellers" bid on the item. Lowest bidder wins, currently supporting 10 different types of listings, including Remote Support and Instrument Leasing
+- Sellers can choose to be notified against selling of specific instruments for specific listings, implemented a dynamic 2-dimensional checkbox to empower the user to edit their preferences
 (Instruments <-> Listing Types)
 - Added AUTO Bid feature for Sellers for bidding on their behalf. Designed and implemented the algorithm for the same + commission based on slabs
-- Wrote formal emails and built templates around authentication, notification of a new instrument, approval notification of sellers as well as congratulatory message for winners.
-- Integrated the new Google Places API to autocomplete user's address based on (debounced) input.
-- Implemented a robust phone number input component that verifies whether a given number is valid for the specific country it's from.
+- Wrote formal emails and built templates around authentication, notification of a new instrument, approval notification of sellers as well as congratulatory message for winners
+- Integrated the new Google Places API to autocomplete user's address based on (debounced) input
+- Implemented a robust phone number input component that verifies whether a given number is valid for the specific country it's from
 - Wrote TRPC procedures for Role Based Authorization (Buyers / Sellers / Admins)
-- Wrote the entire application from scratch (no designs) + ensured responsive images for all screen sizes.
+- Wrote the entire application from scratch (no designs) + ensured responsive images for all screen sizes
     `,
     site: "https://labquote.vercel.app/",
     startDate: "2024 May 12",
