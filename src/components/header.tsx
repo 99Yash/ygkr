@@ -96,14 +96,14 @@ export default Header;
 
 const HEADER_LINKS = [
   {
-    icon: <Building className="h-4 w-4" />,
-    hash: "#engineering",
-    text: "Engineering",
-  },
-  {
     icon: <Folders className="h-4 w-4" />,
     hash: "#projects",
     text: "Collective",
+  },
+  {
+    icon: <Building className="h-4 w-4" />,
+    hash: "#engineering",
+    text: "Engineering",
   },
   // {
   //   icon: <GitMerge className="h-4 w-4" />,
