@@ -35,13 +35,13 @@ export const projects = [
     site: "https://trpc-insta.vercel.app/",
     tech: [
       "NextJS 13",
+      "Server Components",
       "TypeScript",
       "shadcn/ui",
       "Next-Auth",
       "Prisma",
       "TRPC",
-      "PlanetScale",
-      "Server Components",
+      "TiDB Serverless",
     ],
   },
   {

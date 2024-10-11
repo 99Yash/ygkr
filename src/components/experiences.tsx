@@ -121,7 +121,7 @@ export default function Experiences({ experiences }: Props) {
               width={1280}
               height={832}
               alt={work.company}
-              imageClassName="group-hover:scale-105 brightness-75 cursor-pointer"
+              imageClassName="group-hover:scale-105 duration-300 brightness-75 cursor-pointer"
               className="rounded-lg"
               onClick={() => {
                 router.push(work.site);
