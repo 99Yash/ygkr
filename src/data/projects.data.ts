@@ -41,7 +41,7 @@ export const projects = [
       "Next-Auth",
       "Prisma",
       "TRPC",
-      "TiDB Serverless",
+      "TiDB",
     ],
   },
   {
