@@ -52,20 +52,19 @@ export default function Hero() {
           </h1>
           <p
             className={cn(
-              "bg-gradient-to-b from-slate-400 to-slate-600 bg-clip-text text-sm text-transparent",
+              "bg-gradient-to-b from-slate-300/70 to-slate-300/40 bg-clip-text text-sm text-transparent",
               GeistSans.className,
             )}
           >
             <b>TL;DR</b>: Experienced in everything React - Typescript and
             experienced in building apps from scratch (no designs) and
             implementing all aspects of a software: from an internal UI library
-            to a secure API & unconventional db design
+            to a secure API & unconventional db designs
             <br />
             <br />
-            <b>Hi, I&apos;m Yash</b> - I`m a 2024 grad from India; having
-            already 1 year of working experience in a number of very small US
-            startups in their 0-1 phase that evidently made me a Founding
-            Engineer in this short span of time.
+            <b>I&apos;m Yash</b> - I`m a 2024 grad from India; having already 1
+            year of working experience in a number of very small US startups in
+            their 0-1 phase that made me a Founding Engineer in this short time.
           </p>
           <Link
             target="_blank"

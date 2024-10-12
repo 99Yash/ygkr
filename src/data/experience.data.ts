@@ -12,7 +12,7 @@ export type Experience = {
 
 export const experiences = [
   {
-    position: "Founding Engineer",
+    position: "FullStack Engineer",
     company: "Dialy",
     summary:
       "Built the entire payments infrastructure within 3 days of being hired, for subscriptions as well as one time payments using Stripe.",
