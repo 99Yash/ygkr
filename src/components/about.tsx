@@ -17,14 +17,10 @@ const variants = {
 };
 
 type Props = {
-  bio: string;
-  twitter: string;
-  linkedin: string;
-  github: string;
   techStack: Array<(typeof stackl)[number]>;
 };
 
-const AboutMe = ({ bio, twitter, linkedin, github, techStack }: Props) => {
+const AboutMe = ({ techStack }: Props) => {
   const containerRef = React.useRef<HTMLDivElement>(null);
   const isInView = useInView(containerRef, { once: false, margin: "-100px" });
 

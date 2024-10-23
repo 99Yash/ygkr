@@ -14,8 +14,8 @@ export const projects = [
       "🎉 Generates a beautiful portfolio instantly, with pageview analytics, dynamic opengraph images & more... using server components & server actions, next-auth, prisma & shadcn/ui, available for free",
     summary:
       "Forklifter is aimed at developers who either specialize in backend technologies or are just learning to code. Simply add your projects and get a fully responsive portfolio website generated for you that you can then show to potential recruiters. This supports adding your open source projects, personal projects, and even past work experience. Now with pageview analytics + dynamic opengraph images",
-    github: "https://github.com/99Yash/forklifter",
-    site: "https://forklifter.vercel.app/",
+    github: `https://git.new/forklifter`,
+    site: `https://dub.sh/fork`,
     tech: [
       "NextJS",
       "Server Actions",
@@ -31,8 +31,8 @@ export const projects = [
     description:
       "An Innovative Instagram Iteration Developed with the t3-Stack.",
     summary: "",
-    github: "https://github.com/99Yash/trpc-insta",
-    site: "https://trpc-insta.vercel.app/",
+    github: `https://git.new/trinsta`,
+    site: `https://dub.sh/trinsta`,
     tech: [
       "NextJS 13",
       "Server Components",
@@ -48,9 +48,9 @@ export const projects = [
     name: "shreddiit",
     description:
       "A Reddit-like application for building a personalized community aimed at revolutionizing social discourse at my alma-mater (NIT Rourkela)",
-    github: "https://github.com/99Yash/shreddiit",
     summary: "",
-    site: "https://shreddiit.vercel.app/",
+    github: `https://git.new/reddiit`,
+    site: `https://dub.sh/reddiit`,
     tech: [
       "NextJS 13",
       "TypeScript",
