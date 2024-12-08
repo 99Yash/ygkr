@@ -66,7 +66,7 @@ export const experiences = [
     summary:
       "Shapeshifter is a platform for career coaches to fetch personalised jobs for their clients across all domains of life, especially in the tech industry, customised as per their resume and help them get the jobs with personalised cover letters, compatibility scores, areas to focus for the job as well as networking support for referrals.",
     description:
-      "Working on the entire product to improve the dashboard, optimise queries and reduce latency, as well as async server communications like sending notifications and emailsShapeshifter is a platform for career coaches to fetch personalised jobs for their clients across all domains of life, especially in the tech industry, customised as per their resume and help them get the jobs with personalised cover letters, compatibility scores, areas to focus for the job as well as networking support for referrals",
+      "Working on the entire product to improve the dashboard, optimise queries and reduce latency, as well as async server communications like sending notifications and emails. Shapeshifter is a platform for career coaches to fetch personalised jobs for their clients across all domains of life, especially in the tech industry, customised as per their resume and help them get the jobs with personalised cover letters, compatibility scores, areas to focus for the job as well as networking support for referrals",
     site: "https://shapeshifter.so/",
     startDate: "2024 September 10",
     endDate: undefined,
