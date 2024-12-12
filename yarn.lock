@@ -502,10 +502,10 @@
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
   integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
 
-"@types/node@^20.17.9":
-  version "20.17.9"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.17.9.tgz#5f141d4b7ee125cdee5faefe28de095398865bab"
-  integrity sha512-0JOXkRyLanfGPE2QRCwgxhzlBAvaRdCNMcvbd7jFfpmD4eEXll7LRwy5ymJmyeZqk7Nh7eD2LeUyQ68BbndmXw==
+"@types/node@^20.17.10":
+  version "20.17.10"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.17.10.tgz#3f7166190aece19a0d1d364d75c8b0b5778c1e18"
+  integrity sha512-/jrvh5h6NXhEauFFexRin69nA0uHJ5gwk4iDivp/DeoEua3uwCUto6PC86IpRITBOs4+6i2I56K5x5b6WYGXHA==
   dependencies:
     undici-types "~6.19.2"
 
@@ -514,17 +514,15 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.12.tgz#12bb1e2be27293c1406acb6af1c3f3a1481d98c6"
   integrity sha512-5zvhXYtRNRluoE/jAp4GVsSduVUzNWKkOZrCDBWYtE7biZywwdC2AcEzg+cSMLFRfVgeAFqpfNabiPjxFddV1Q==
 
-"@types/react-dom@^18.3.2":
-  version "18.3.2"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.3.2.tgz#b58a9520f5f317a00bbda0271502889b71c345f0"
-  integrity sha512-Fqp+rcvem9wEnGr3RY8dYNvSQ8PoLqjZ9HLgaPUOjJJD120uDyOxOjc/39M4Kddp9JQCxpGQbnhVQF0C0ncYVg==
-  dependencies:
-    "@types/react" "^18"
+"@types/react-dom@^18.3.5":
+  version "18.3.5"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.3.5.tgz#45f9f87398c5dcea085b715c58ddcf1faf65f716"
+  integrity sha512-P4t6saawp+b/dFrUr2cvkVsfvPguwsxtH6dNIYRllMsefqFzkZk5UIjzyDOv5g1dXIPdG4Sp1yCR4Z6RCUsG/Q==
 
-"@types/react@^18", "@types/react@^18.3.14":
-  version "18.3.14"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.3.14.tgz#7ce43bbca0e15e1c4f67ad33ea3f83d75aa6756b"
-  integrity sha512-NzahNKvjNhVjuPBQ+2G7WlxstQ+47kXZNHlUvFakDViuIEfGY926GqhMueQFZ7woG+sPiQKlF36XfrIUVSUfFg==
+"@types/react@^18.3.16":
+  version "18.3.16"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.3.16.tgz#5326789125fac98b718d586ad157442ceb44ff28"
+  integrity sha512-oh8AMIC4Y2ciKufU8hnKgs+ufgbA/dhPTACaZPM86AbwX9QwnFtSoPWEeRUj8fge+v6kFt78BXcDhAU1SrrAsw==
   dependencies:
     "@types/prop-types" "*"
     csstype "^3.0.2"
@@ -1654,10 +1652,10 @@ fraction.js@^4.2.0:
   resolved "https://registry.yarnpkg.com/fraction.js/-/fraction.js-4.3.7.tgz#06ca0085157e42fda7f9e726e79fefc4068840f7"
   integrity sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==
 
-framer-motion@^11.13.1:
-  version "11.13.1"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-11.13.1.tgz#f15ca61c2b77067f4c7bc75833adae711fbef1fe"
-  integrity sha512-F40tpGTHByhn9h3zdBQPcEro+pSLtzARcocbNqAyfBI+u9S+KZuHH/7O9+z+GEkoF3eqFxfvVw0eBDytohwqmQ==
+framer-motion@^11.13.5:
+  version "11.13.5"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-11.13.5.tgz#2cec307d2395ba6924a683abd79a517ec1f318f5"
+  integrity sha512-rArI0zPU9VkpS3Wt0J7dmRxAFUWtzPWoSofNQAP0UO276CmJ+Xlf5xN19GMw3w2QsdrS2sU+0+Q2vtuz4IEZaw==
   dependencies:
     motion-dom "^11.13.0"
     motion-utils "^11.13.0"
