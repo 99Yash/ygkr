@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import GlowTop from "../../public/assets/gradient-background-top.png";
 
+import { MotionConfig } from "framer-motion";
 import { Inter } from "next/font/google";
 import Image from "next/image";
 import { cn } from "../lib/utils";
@@ -89,29 +90,31 @@ export default function RootLayout({
         <SpeedInsights />
       </head>
 
-      <body
-        className={cn(
-          "min-h-screen font-sans antialiased scrollbar-hide",
-          inter.variable,
-          calcom.variable,
-          haptik.variable,
-          haptikBold.variable,
-        )}
-      >
-        <div className="absolute left-1/2 top-0 -z-10 -translate-x-1/2 opacity-80">
-          <Image
-            src={GlowTop}
-            className="max-w-[55vw]"
-            width={1404}
-            height={778}
-            alt="Glow Top"
-          />
-        </div>
-        {children}
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <TailwindIndicator />
-        </ThemeProvider>
-      </body>
+      <MotionConfig reducedMotion="user">
+        <body
+          className={cn(
+            "min-h-screen font-sans antialiased scrollbar-hide",
+            inter.variable,
+            calcom.variable,
+            haptik.variable,
+            haptikBold.variable,
+          )}
+        >
+          <div className="absolute left-1/2 top-0 -z-10 -translate-x-1/2 opacity-80">
+            <Image
+              src={GlowTop}
+              className="max-w-[55vw]"
+              width={1404}
+              height={778}
+              alt="Glow Top"
+            />
+          </div>
+          {children}
+          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+            <TailwindIndicator />
+          </ThemeProvider>
+        </body>
+      </MotionConfig>
     </html>
   );
 }
