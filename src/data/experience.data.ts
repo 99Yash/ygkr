@@ -46,7 +46,7 @@ export const experiences = [
 - Wrote TRPC procedures for Role Based Authorization (Buyers / Sellers / Admins)
 - Wrote the entire application from scratch (no designs) + ensured responsive images for all screen sizes
     `,
-    site: "https://labquote.vercel.app/",
+    site: "https://dub.sh/labquote",
     startDate: "2024 May 12",
     endDate: undefined,
     currentlyWorking: true,
@@ -67,7 +67,7 @@ export const experiences = [
       "Shapeshifter is a platform for career coaches to fetch personalised jobs for their clients across all domains of life, especially in the tech industry, customised as per their resume and help them get the jobs with personalised cover letters, compatibility scores, areas to focus for the job as well as networking support for referrals.",
     description:
       "Working on the entire product to improve the dashboard, optimise queries and reduce latency, as well as async server communications like sending notifications and emails. Shapeshifter is a platform for career coaches to fetch personalised jobs for their clients across all domains of life, especially in the tech industry, customised as per their resume and help them get the jobs with personalised cover letters, compatibility scores, areas to focus for the job as well as networking support for referrals",
-    site: "https://shapeshifter.so/",
+    site: "https://dub.sh/shapeshifter",
     startDate: "2024 September 10",
     endDate: undefined,
     currentlyWorking: true,
