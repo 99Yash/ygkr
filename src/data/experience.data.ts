@@ -12,23 +12,28 @@ export type Experience = {
 
 export const experiences = [
   {
-    position: "FullStack Engineer",
-    company: "Dialy",
+    position: "Founding Engineer",
+    company: "Shapeshifter",
     summary:
-      "Built the entire payments infrastructure within 3 days of being hired, for subscriptions as well as one time payments using Stripe.",
-    description:
-      "Built the entire payments infrastructure consisting of subscriptions + one time top-ups using Stripe & Webhooks. Added a cron job to schedule calls according to the user's preferred timings between 8am to 7pm with support for 7 days a week across 428 timezones. Integrated user's calendar using Google's Calendar API to the user's Workspace. Built a test call modal with Custom Prompt support, using the OpenAI API in < 3h. Designed and implemented a versatile Do-Not-Disturb feature, configurable for both public and workspace scope, with automated maintenance of records. Added cron jobs to delete all DND records > 1yr old. Established secure OTP verification using Twilio. Fixed dozens of cache invalidation issues. Implemented a Playback controller to listen to the recordings of any particular call. Added a Fully customizable Filtering and Sorting of Calls and Recordings as per duration, cost, campaign, date and more. Integrated an email provider and wrote personalized emails for a myriad of events such as passwords-reset, workspace invitations, low balance warning etc. along with their respective implementations, from scratch. Integrated MagicBell as a notification provider. Built a ton of forms(type-safe and secure), including all the settings pages throughout the application. (**till Jan 30 2024**)",
-    site: "https://dialy.io/",
-    startDate: "2023 December 11",
-    endDate: "2024 April",
-    currentlyWorking: false,
+      "Shapeshifter is a platform for career coaches to fetch personalised jobs for their clients across all domains of life, especially in the tech industry, customised as per their resume and help them get the jobs with personalised cover letters, compatibility scores, areas to focus for the job as well as networking support for referrals.",
+    description: `- Optimised queries in the scope of the entire codebase
+- Formatted and redacted sensitive error messages throughout the app
+- Integrated Sentry as a monitoring service
+- Refactored the chrome extension to inject a UI in the DOM for analysis on a Linkedin job page
+- Architected the entire payment flow, for auto-charging users with Stripe, post saving payment details
+- Dug deep into performance / UX issues, added scroll-based pagination in three different contexts
+- Led the refactor to a turbo repo app from a basic NextJS application`,
+    site: "https://dub.sh/shapeshifter",
+    startDate: "2024 September 10",
+    endDate: undefined,
+    currentlyWorking: true,
     tech: [
       "NextJS",
       "TypeScript",
       "Prisma",
-      "shadcn/ui",
-      "Next-Auth",
+      "chakra/ui",
       "MongoDB",
+      "OpenAI API",
     ],
   },
   {
@@ -61,28 +66,23 @@ export const experiences = [
     ],
   },
   {
-    position: "Founding Engineer",
-    company: "Shapeshifter",
+    position: "FullStack Engineer",
+    company: "Dialy",
     summary:
-      "Shapeshifter is a platform for career coaches to fetch personalised jobs for their clients across all domains of life, especially in the tech industry, customised as per their resume and help them get the jobs with personalised cover letters, compatibility scores, areas to focus for the job as well as networking support for referrals.",
-    description: `- Optimized queries in the scope of the entire codebase
-- Formatted and redacted sensitive error messages throughout the app
-- Integrated Sentry as a monitoring service
-- Refactored the chrome extension to inject a UI in the DOM for analysis on a Linkedin job page
-- Architected the entire payment flow, for auto-charging users with Stripe, post saving payment details
-- Dug deep into performance / UX issues, added scroll-based pagination in three different contexts
-- Led the refactor to a turbo repo app from a basic NextJS application`,
-    site: "https://dub.sh/shapeshifter",
-    startDate: "2024 September 10",
-    endDate: undefined,
-    currentlyWorking: true,
+      "Built the entire payments infrastructure within 3 days of being hired, for subscriptions as well as one time payments using Stripe.",
+    description:
+      "Built the entire payments infrastructure consisting of subscriptions + one time top-ups using Stripe & Webhooks. Added a cron job to schedule calls according to the user's preferred timings between 8am to 7pm with support for 7 days a week across 428 timezones. Integrated user's calendar using Google's Calendar API to the user's Workspace. Built a test call modal with Custom Prompt support, using the OpenAI API in < 3h. Designed and implemented a versatile Do-Not-Disturb feature, configurable for both public and workspace scope, with automated maintenance of records. Added cron jobs to delete all DND records > 1yr old. Established secure OTP verification using Twilio. Fixed dozens of cache invalidation issues. Implemented a Playback controller to listen to the recordings of any particular call. Added a Fully customizable Filtering and Sorting of Calls and Recordings as per duration, cost, campaign, date and more. Integrated an email provider and wrote personalized emails for a myriad of events such as passwords-reset, workspace invitations, low balance warning etc. along with their respective implementations, from scratch. Integrated MagicBell as a notification provider. Built a ton of forms(type-safe and secure), including all the settings pages throughout the application. (**till Jan 30 2024**)",
+    site: "https://dialy.io/",
+    startDate: "2023 December 11",
+    endDate: "2024 April",
+    currentlyWorking: false,
     tech: [
       "NextJS",
       "TypeScript",
       "Prisma",
-      "chakra/ui",
+      "shadcn/ui",
+      "Next-Auth",
       "MongoDB",
-      "OpenAI API",
     ],
   },
 ] satisfies Experience[];
