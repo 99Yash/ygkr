@@ -62,9 +62,9 @@ export default function Hero() {
             to a secure API & unconventional db designs
             <br />
             <br />
-            <b>I&apos;m Yash</b> - I`m a 2024 grad from India; having already 1
-            year of working experience in a number of very small US startups in
-            their 0-1 phase that made me a Founding Engineer in this short time.
+            <b>I&apos;m Yash</b> - I&apos;m from India; having already 1 year of
+            working experience in a number of very small US startups in their
+            0-1 phase that made me a Founding Engineer in this span of time.
           </p>
           <Link
             target="_blank"

@@ -16,7 +16,8 @@ export const experiences = [
     company: "Shapeshifter",
     summary:
       "Shapeshifter is a platform for career coaches to fetch personalised jobs for their clients across all domains of life, especially in the tech industry, customised as per their resume and help them get the jobs with personalised cover letters, compatibility scores, areas to focus for the job as well as networking support for referrals.",
-    description: `- Optimised queries in the scope of the entire codebase
+    description: `- Built a chrome extension to inject a UI in the DOM for analysis on a Linkedin job page
+- Optimised queries in the scope of the entire codebase
 - Formatted and redacted sensitive error messages throughout the app
 - Integrated Sentry as a monitoring service
 - Refactored the chrome extension to inject a UI in the DOM for analysis on a Linkedin job page
@@ -43,7 +44,6 @@ export const experiences = [
     description: `- Architected an application centered around auctioning of laboratory equipments
 - Built on the philosophy of lowest first: "buyers" post listings and "sellers" bid on the item. Lowest bidder wins, currently supporting 10 different types of listings, including Remote Support and Instrument Leasing
 - Sellers can choose to be notified against selling of specific instruments for specific listings, implemented a dynamic 2-dimensional checkbox to empower the user to edit their preferences
-(Instruments <-> Listing Types)
 - Added AUTO Bid feature for Sellers for bidding on their behalf. Designed and implemented the algorithm for the same + commission based on slabs
 - Wrote formal emails and built templates around authentication, notification of a new instrument, approval notification of sellers as well as congratulatory message for winners
 - Integrated the new Google Places API to autocomplete user's address based on (debounced) input
@@ -54,7 +54,7 @@ export const experiences = [
     site: "https://dub.sh/labquote",
     startDate: "2024 May 12",
     endDate: "2024 September 10",
-    currentlyWorking: true,
+    currentlyWorking: false,
     tech: [
       "NextJS",
       "TypeScript",
