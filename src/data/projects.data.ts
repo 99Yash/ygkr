@@ -15,7 +15,7 @@ export const projects = [
     summary:
       "Forklifter is aimed at developers who either specialize in backend technologies or are just learning to code. Simply add your projects and get a fully responsive portfolio website generated for you that you can then show to potential recruiters. This supports adding your open source projects, personal projects, and even past work experience. Now with pageview analytics + dynamic opengraph images",
     github: `https://git.new/forklifter`,
-    site: `https://dub.sh/fork`,
+    site: `https://dub.sh/forklifter`,
     tech: [
       "NextJS",
       "Server Actions",
