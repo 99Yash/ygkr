@@ -16,14 +16,14 @@ export const experiences = [
     company: "Shapeshifter",
     summary:
       "Shapeshifter is a platform for career coaches to fetch personalised jobs for their clients across all domains of life, especially in the tech industry, customised as per their resume and help them get the jobs with personalised cover letters, compatibility scores, areas to focus for the job as well as networking support for referrals.",
-    description: `- Built a chrome extension to inject a UI in the DOM for analysis on a Linkedin job page
-- Optimised queries in the scope of the entire codebase
-- Formatted and redacted sensitive error messages throughout the app
-- Integrated Sentry as a monitoring service
-- Refactored the chrome extension to inject a UI in the DOM for analysis on a Linkedin job page
-- Architected the entire payment flow, for auto-charging users with Stripe, post saving payment details
-- Dug deep into performance / UX issues, added scroll-based pagination in three different contexts
-- Led the refactor to a turbo repo app from a basic NextJS application`,
+    description: `- Led the refactor to a turbo repo app from a basic NextJS application
+      - Did a full rewrite of 45 LLM calls, with added typesafety and advanced error handling using Zod and Vercel AI SDK
+      - Added user sign in with referrals
+      - Integrated Sentry as a monitoring service
+      - Optimized queries in the scope of the entire codebase, Formatted and redacted sensitive error messages throughout the app
+      - Built a chrome extension to inject a UI in the DOM for analysis on a Linkedin job page
+    - Architected the entire payment flow, for auto-charging users with Stripe, post saving payment details, Dug deep into performance / UX issues, added scroll-based pagination in three different contexts
+    `,
     site: "https://dub.sh/shapeshifter",
     startDate: "2024 September 10",
     endDate: undefined,
@@ -35,6 +35,9 @@ export const experiences = [
       "chakra/ui",
       "MongoDB",
       "OpenAI API",
+      "TRPC",
+      "Zod",
+      "Vercel AI SDK",
     ],
   },
   {

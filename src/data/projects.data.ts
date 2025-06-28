@@ -9,6 +9,24 @@ export type Project = {
 
 export const projects = [
   {
+    name: "repligram",
+    description:
+      "A fully-responsive Instagram Clone with the t3-Stack. Posts, Animations, comments, messaging, message reactions: the whole 9 yards. Built with NextJS 14, Server Components, TypeScript, shadcn/ui, Clerk-Auth, Drizzle, TRPC, and Postgres.",
+    summary: "",
+    github: `https://git.new/repligram`,
+    site: `https://dub.sh/gram`,
+    tech: [
+      "NextJS 14",
+      "Server Components",
+      "TypeScript",
+      "shadcn/ui",
+      "Clerk-Auth",
+      "Drizzle",
+      "TRPC",
+      "Postgres",
+    ],
+  },
+  {
     name: "forklifter",
     description:
       "🎉 Generates a beautiful portfolio instantly, with pageview analytics, dynamic opengraph images & more... using server components & server actions, next-auth, prisma & shadcn/ui, available for free",
@@ -24,24 +42,6 @@ export const projects = [
       "shadcn/ui",
       "Next-Auth",
       "MongoDB",
-    ],
-  },
-  {
-    name: "trpc-insta",
-    description:
-      "An Innovative Instagram Iteration Developed with the t3-Stack.",
-    summary: "",
-    github: `https://git.new/trinsta`,
-    site: `https://dub.sh/trinsta`,
-    tech: [
-      "NextJS 13",
-      "Server Components",
-      "TypeScript",
-      "shadcn/ui",
-      "Next-Auth",
-      "Prisma",
-      "TRPC",
-      "TiDB",
     ],
   },
   {

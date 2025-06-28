@@ -82,16 +82,17 @@ export default function FeaturedProjects({ projects }: ProjectsProps) {
         {projects.map((project, i) => (
           <div
             key={i}
-            className="group rounded-xl px-2 py-4 shadow-feature-card dark:shadow-feature-card-dark"
+            className="group flex flex-col rounded-xl px-2 py-4 shadow-feature-card dark:shadow-feature-card-dark"
           >
-            <BlurImage
-              src={`/assets/${project.name}.png`}
-              width={1280}
-              height={832}
-              imageClassName="group-hover:scale-110 brightness-75"
-              alt={project.name}
-              className="rounded-lg"
-            />
+            <div className="relative aspect-video overflow-hidden rounded-lg">
+              <BlurImage
+                src={`/assets/${project.name}.png`}
+                imageClassName="group-hover:scale-110 brightness-75 transition-transform duration-300 ease-in-out object-cover"
+                alt={project.name}
+                className="rounded-lg"
+                fill
+              />
+            </div>
             <div className="flex-1 px-2 py-4">
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
