@@ -1,0 +1,24 @@
+export const meta = {
+  position: "Founding Engineer",
+  company: "Shapeshifter",
+  site: "https://dub.sh/shapeshifter",
+  startDate: "2024-09-10",
+  currentlyWorking: true,
+  tech: [
+    "NextJS",
+    "TypeScript",
+    "Prisma",
+    "chakra/ui",
+    "MongoDB",
+    "OpenAI API",
+    "TRPC",
+    "Zod",
+    "Vercel AI SDK",
+  ],
+};
+
+- Solely carried the refactor to a [**TurboRepo**](https://turbo.build/) multi-package workspace
+- Rewrote ~50 LLM calls with strict type-safety and advanced error handling using [**Zod**](https://zod.dev/) + [**Vercel AI SDK**](https://ai-sdk.dev/)
+- De-coupled a [**tRPC**](https://trpc.io/) API into its own service to be shared with a Chrome extension for type-safe API calls
+- Added support for referrals to bypass private access, while the application is not GA.
+- Integrated [Sentry](https://sentry.io) for monitoring

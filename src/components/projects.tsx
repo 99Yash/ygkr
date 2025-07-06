@@ -1,6 +1,6 @@
 "use client";
 
-import { Project } from "@/data/projects.data";
+import { Project, projects } from "@/data/projects.mdx";
 import { cn } from "@/lib/utils";
 import { motion, useInView } from "framer-motion";
 import { GeistSans } from "geist/font/sans";
@@ -26,11 +26,7 @@ const variants = {
   },
 };
 
-export type ProjectsProps = {
-  projects: Project[];
-};
-
-export default function FeaturedProjects({ projects }: ProjectsProps) {
+export default function FeaturedProjects() {
   const projectsRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(projectsRef, {
     once: false,
@@ -79,7 +75,7 @@ export default function FeaturedProjects({ projects }: ProjectsProps) {
           duration: 0.3,
         }}
       >
-        {projects.map((project, i) => (
+        {projects.map((project: Project, i: number) => (
           <div
             key={i}
             className="group flex flex-col rounded-xl px-2 py-4 shadow-feature-card dark:shadow-feature-card-dark"
@@ -131,13 +127,16 @@ export default function FeaturedProjects({ projects }: ProjectsProps) {
                   )}
                 >
                   {project.description}
+                  <div className="prose prose-sm mt-2 max-w-none text-muted-foreground dark:prose-invert">
+                    <project.Component />
+                  </div>
                 </div>
               </div>
               <div className="mt-4 flex flex-wrap gap-2">
                 <div className="flex flex-wrap gap-2">
                   {project.tech
-                    .sort((a, b) => a.localeCompare(b))
-                    .map((t) => {
+                    .sort((a: string, b: string) => a.localeCompare(b))
+                    .map((t: string) => {
                       return (
                         <div
                           key={t}

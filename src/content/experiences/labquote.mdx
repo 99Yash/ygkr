@@ -1,0 +1,26 @@
+export const meta = {
+position: "Founding Engineer",
+company: "Labquote",
+site: "https://dub.sh/labquote",
+startDate: "2024-05-12",
+endDate: "2024-09-10",
+currentlyWorking: false,
+tech: [
+"NextJS",
+"TypeScript",
+"Prisma",
+"TRPC",
+"shadcn/ui",
+"Supabase",
+"PostgreSQL",
+],
+};
+
+- Architected a platform for auction-style procurement of laboratory equipments from scratch
+- Implemented 10 different listing types including _Remote Support_ & _Instrument Leasing_ using JsonB data type from PostgreSQL with strict type checks for each listing requirement
+- Designed a 2-dimensional preference matrix so sellers can choose which instruments & listing types should trigger real-time notifications
+- Shipped an **AUTO-Bid** feature that bids on behalf of sellers using a slab-based commission algorithm
+- Authored formal email templates for authentication, new instrument alerts, seller approval, and winner congratulations
+- Integrated Google Places API for address autocompletion & phone validation
+- Added role-based authorisation with _tRPC_ procedures for Buyers / Sellers / Admins
+- Wrote the entire responsive UI from scratch (no Figma) with optimised images across breakpoints
