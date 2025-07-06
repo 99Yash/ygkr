@@ -13,6 +13,7 @@ export const stackl = [
   "PostgreSQL",
   "Prisma",
   "React",
+  "Drizzle",
   "TailwindCSS",
   "TRPC",
   "TypeScript",
@@ -44,7 +45,9 @@ export const stacks = stackl.map((label) => ({
                           ? "Mongodb"
                           : label === "MySQL"
                             ? "Mysql"
-                            : label
+                            : label === "Drizzle"
+                              ? "Drizzle"
+                              : label
     }`
   ],
 }));
