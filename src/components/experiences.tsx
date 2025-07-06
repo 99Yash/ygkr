@@ -32,31 +32,6 @@ export default function Experiences() {
 
   const router = useRouter();
 
-  // const [ogImageUrls, setOgImageUrls] = useState<Array<string | null>>([]);
-
-  // useEffect(() => {
-  //   experiences.forEach(async (exp) => {
-  //     try {
-  //       const fetchOgImages = async () => {
-  //         const usedPlaceholders = new Set<string>();
-  //         let placeholderUrl: string | null = null;
-  //         do {
-  //           placeholderUrl =
-  //             placeholderImgs[
-  //               Math.floor(Math.random() * placeholderImgs.length)
-  //             ];
-  //         } while (usedPlaceholders.has(placeholderUrl));
-  //         let ogImageUrl = (await getOgImageUrl(exp.site)) || placeholderUrl;
-  //         setOgImageUrls((prev) => [...prev, ogImageUrl]);
-  //       };
-  //       fetchOgImages();
-  //     } catch (error) {
-  //       console.error(`Error fetching og image for ${exp.site}:`, error);
-  //       setOgImageUrls((prev) => [...prev, null]);
-  //     }
-  //   });
-  // }, [experiences]);
-
   return (
     <motion.div
       initial="initial"
@@ -165,7 +140,7 @@ export default function Experiences() {
                     </TooltipProvider>
                   </div>
                 </div>
-                <div className="prose prose-sm dark:prose-invert max-w-none text-muted-foreground">
+                <div className="prose prose-sm max-w-none text-muted-foreground dark:prose-invert">
                   <work.Component />
                 </div>
               </div>

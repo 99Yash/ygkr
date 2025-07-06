@@ -1,3 +1,5 @@
+"use client";
+
 import Forklifter, {
   meta as forklifterMeta,
 } from "@/content/projects/forklifter.mdx";
@@ -8,14 +10,8 @@ import Shreddiit, {
   meta as shreddiitMeta,
 } from "@/content/projects/shreddiit.mdx";
 
-export type Project = {
-  name: string;
-  description: string;
-  summary: string;
-  github: string;
-  tech: string[];
-  site: string;
-  Component?: (props: any) => JSX.Element;
+export type Project = typeof repligramMeta & {
+  Component: (props: any) => JSX.Element;
 };
 
 export const projects: Project[] = [
@@ -24,13 +20,9 @@ export const projects: Project[] = [
   { ...(shreddiitMeta as Project), Component: Shreddiit },
 ];
 
-// Development-only: quickly verify shape & tech counts.
 if (process.env.NODE_ENV === "development") {
   // eslint-disable-next-line no-console
   console.table(
-    projects.map(({ name, tech }) => ({
-      name,
-      techCount: tech.length,
-    })),
+    projects.map(({ name, tech }) => ({ name, techCount: tech.length })),
   );
 }

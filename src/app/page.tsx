@@ -4,7 +4,6 @@ import Experiences from "@/components/experiences";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import FeaturedProjects from "@/components/projects";
-import { projects } from "@/data/projects.data";
 import { self } from "@/data/self.data";
 import { stacks } from "@/data/stack.data";
 
@@ -16,7 +15,7 @@ export default function Home() {
         <Hero />
         <AboutMe techStack={stacks.map((stack) => stack.label)} />
         <Experiences />
-        <FeaturedProjects projects={projects} />
+        <FeaturedProjects />
         <Connect
           github={self.github}
           twitter={self.twitter}
