@@ -23,7 +23,7 @@ export const stacks = stackl.map((label) => ({
   icon: ReactIcons[
     `Si${
       label === "CSS"
-        ? "Css3"
+        ? "Css"
         : label === "HTML"
           ? "Html5"
           : label === "JavaScript"

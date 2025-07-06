@@ -6,8 +6,8 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { Experience } from "@/data/experience.data";
-import { formatDate } from "@/lib/utils";
+import { experiences } from "@/data/experience.mdx";
+import { cn, formatDate } from "@/lib/utils";
 import { motion, useInView } from "framer-motion";
 import { Calendar, ExternalLink } from "lucide-react";
 import Link from "next/link";
@@ -26,20 +26,9 @@ const variants = {
   },
 };
 
-type Props = {
-  experiences: Experience[];
-};
-
-export default function Experiences({ experiences }: Props) {
+export default function Experiences() {
   const contRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(contRef, { once: false, margin: "-100px" });
-
-  const bullets = (exp: Experience) => {
-    const bulletPoints = exp.description
-      .split(".")
-      .filter((point) => point.trim() !== "");
-    return bulletPoints;
-  };
 
   const router = useRouter();
 
@@ -111,9 +100,11 @@ export default function Experiences({ experiences }: Props) {
         }}
       >
         {experiences.map((work, i) => (
-          <div
+          <motion.div
             key={i}
-            className="group relative flex flex-col rounded-xl px-2 py-4 shadow-feature-card-dark"
+            className={cn(
+              "group relative flex flex-col rounded-xl border border-neutral-800/20 bg-white/5 px-4 py-6 shadow-feature-card backdrop-blur transition-transform dark:bg-neutral-800/20 dark:shadow-feature-card-dark",
+            )}
           >
             <BlurUnknownImage
               src={`/assets/${work.company.toLowerCase()}.png`}
@@ -174,14 +165,24 @@ export default function Experiences({ experiences }: Props) {
                     </TooltipProvider>
                   </div>
                 </div>
-                <ul className="whitespace-pre-line break-words text-sm font-medium text-muted-foreground">
-                  {bullets(work).map((bullet, i) => (
-                    <li key={i}>{bullet}</li>
+                <div className="prose prose-sm dark:prose-invert max-w-none text-muted-foreground">
+                  <work.Component />
+                </div>
+              </div>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {work.tech
+                  .sort((a: string, b: string) => a.localeCompare(b))
+                  .map((t: string) => (
+                    <span
+                      key={t}
+                      className="animate-shine inline-flex items-center justify-center rounded-full border border-neutral-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-3 py-1 text-xs font-medium text-neutral-400"
+                    >
+                      {t}
+                    </span>
                   ))}
-                </ul>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </motion.div>
     </motion.div>

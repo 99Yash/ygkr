@@ -4,7 +4,6 @@ import Experiences from "@/components/experiences";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import FeaturedProjects from "@/components/projects";
-import { experiences } from "@/data/experience.data";
 import { projects } from "@/data/projects.data";
 import { self } from "@/data/self.data";
 import { stacks } from "@/data/stack.data";
@@ -16,7 +15,7 @@ export default function Home() {
       <section className="mx-auto mb-16 max-w-5xl space-y-36 px-5 py-24 scrollbar-hide sm:px-8">
         <Hero />
         <AboutMe techStack={stacks.map((stack) => stack.label)} />
-        <Experiences experiences={experiences} />
+        <Experiences />
         <FeaturedProjects projects={projects} />
         <Connect
           github={self.github}
