@@ -41,18 +41,18 @@ export const metadata: Metadata = {
   },
   description:
     "Software Developer building stuff with everything new in the NextJS ecosystem",
-  metadataBase: new URL("https://ygkr.vercel.app"),
+  metadataBase: new URL("https://ygkr.live"),
   openGraph: {
     title: "ygkr",
     description:
       "Software Developer building stuff with TRPC & everything new in the NextJS ecosystem",
-    url: "https://ygkr.vercel.app",
-    siteName: "ygkr.vercel.app",
+    url: "https://ygkr.live",
+    siteName: "ygkr.live",
     locale: "en-US",
     type: "website",
     images: [
       {
-        url: "https://ygkr.vercel.app/og.png",
+        url: "https://ygkr.live/og.png",
         width: 1920,
         height: 1080,
       },
