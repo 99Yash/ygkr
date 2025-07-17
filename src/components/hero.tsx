@@ -57,12 +57,9 @@ export default function Hero() {
             )}
           >
             <b>TL;DR</b>: Self-taught Software Developer with a strong focus on
-            building high-performance, responsive front-end applications using
-            NextJS and React. Experienced in API integration, performance
-            optimization, and creating intuitive user interfaces that meet
-            modern web standards. Proven track record in architecting scalable
-            solutions and collaborating closely with design teams to deliver
-            seamless user experiences
+            building high-performance, end to end applications using NextJS and
+            React. Experienced in API integration, performance optimization, and
+            creating intuitive user interfaces that meet modern web standards.
             <br />
             <br />
             <b>I&apos;m Yash</b> - having worked professionally since 2023 in a
