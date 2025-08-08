@@ -40,12 +40,12 @@ export const metadata: Metadata = {
     template: "%s - ygkr",
   },
   description:
-    "Software Developer building stuff with everything new in the NextJS ecosystem",
+    "Software Developer building stuff with AI, RAG, vector databases, and everything new in the NextJS ecosystem",
   metadataBase: new URL("https://ygkr.live"),
   openGraph: {
     title: "ygkr",
     description:
-      "Software Developer building stuff with TRPC & everything new in the NextJS ecosystem",
+      "Software Developer building stuff with AI, RAG, vector databases, and everything new in the NextJS ecosystem",
     url: "https://ygkr.live",
     siteName: "ygkr.live",
     locale: "en-US",
